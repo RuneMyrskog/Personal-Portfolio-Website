@@ -89,3 +89,4 @@ node_modules/
 firebase.json
 
 example_readme.md
+database.rules.json
