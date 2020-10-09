@@ -1,26 +1,56 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import ContactMe from './ContactMe';
+import Home from './Home'
+import About from './About';
+import Skills from './Skills';
+import logo from './images/logo.jpeg';
+import './css/App.css';
 
-function App() {
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Router>
+          <Navbar/>
+          <Switch>
+            <Route path="/" exact component={Home}/>
+            <Route path="/about" component={About}/>
+            <Route path="/skills" component={Skills}/>
+            <Route path="/contactme" component={ContactMe}/>
+          </Switch>
+      </Router>
   );
 }
 
-export default App;
+
+class Navbar extends React.Component {
+
+  render () {
+    return (
+      <div id='navbar'>
+        <img id="logo" src={logo} alt="logo"></img>
+        <ul>
+          <NavLink to="/" name="Home"/>
+          <NavLink to="/about" name="About"/>
+          <NavLink to="/skills" name="Skills"/>
+          <NavLink to="/contactme" name="Contact Me"/>
+        </ul>
+      </div>
+    );
+  }
+}
+
+class NavLink extends React.Component {
+  render() {
+    return (
+      <li>
+        <Link to={this.props.to}>
+          <button id="navButton">{this.props.name}</button>
+        </Link>
+      </li>
+    );
+  }
+}
+
+
+

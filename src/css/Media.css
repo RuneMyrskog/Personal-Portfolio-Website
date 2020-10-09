@@ -1,0 +1,39 @@
+#mediaContainer {
+    justify-content: space-around;
+    margin: auto;
+    width: fit-content;
+    overflow: hidden;
+}
+
+#mediaContainer ul {
+    height: 100%;
+    justify-content: space-around;
+    margin-top: 30px;
+    list-style: none;
+}
+
+.media{
+    margin-top: 100px;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: "europa", sans-serif;
+    text-align: left;
+    color: white;
+    display: table;
+    height: fit-content;
+}
+
+.mediaIcon {
+    width: 40px;
+    border-radius:15%;
+    margin-right: 10px;
+}
+
+.mediaLink {
+    vertical-align: middle;
+    display: table-cell;
+    vertical-align: middle;
+    margin-left: 20px;
+    font-style: italic;
+}
+
