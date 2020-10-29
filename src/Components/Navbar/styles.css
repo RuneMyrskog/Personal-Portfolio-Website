@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+}
+
+#navbar {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+#navButton {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 15px;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  font-family: "europa", sans-serif;
+  font-weight: bold;
+  top: 10px;
+  right: 10px;
+  color: white;
+  outline: none;
+}
+
+#navButton:hover {
+  background-color: gray;
+}
+#navButton:active {
+  background-color: darkgray;
+}
+
+#logo {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 50px;
+}
+

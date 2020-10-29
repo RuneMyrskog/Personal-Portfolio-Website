@@ -1,0 +1,21 @@
+#aboutContainer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+.title {
+    color: white;
+    font-size: 50px;
+}
+
+#aboutDescription {
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    max-width: 1000px;
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    border: 10px solid white;
+}

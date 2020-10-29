@@ -1,0 +1,49 @@
+#skillsContainer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.techsContainer {
+    display: flex;
+    justify-content: space-around;
+    
+    margin: auto;
+    margin-top: 50px;
+    max-width: 800px;
+}
+
+.techsContainer li{
+    display: inline-block
+}
+
+.techContainer{
+    display: inline-block;
+    justify-content: space-around;
+    
+}
+
+.techSpan {
+    display: block;
+    color: white;
+    font-style: oblique;
+    font-size: 20px;
+    margin-top:10px;
+}
+
+.techLogo {
+    height: 80px;
+}
+
+
+
+.skillsDescription {
+    max-width: 1000px;
+    color: white;
+    font-size: 20px;
+    margin:auto;
+    margin-top: 30px;
+}
+
+#githubLink {
+    margin-top: 50px;
+}

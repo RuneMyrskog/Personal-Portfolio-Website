@@ -1,0 +1,13 @@
+body {
+    background-image: url('./images/Backround.jpg');
+    margin: 0;
+}
+
+html {
+    min-height: 100%;
+}
+
+.title {
+    color: white;
+    font-size: 50px;
+}

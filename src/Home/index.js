@@ -1,6 +1,6 @@
 import React from 'react';
-import profilepic from './images/profilepic.jpeg';
-import './css/Home.css';
+import profilepic from '../images/profilepic.jpeg';
+import './styles.css';
 
 export default class Home extends React.Component {
     render (){
