@@ -5,7 +5,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import Contact from './Contact';
 import Home from './Home';
-import About from './About';
+import Resume from './Resume';
 import Skills from './Skills';
 
 
@@ -19,9 +19,10 @@ class App extends React.Component {
             <Navbar/>
             <Switch>
               <Route path="/" exact component={Home}/>
-              <Route path="/about" component={About}/>
+              <Route path="/resume" component={Resume}/>
               <Route path="/skills" component={Skills}/>
               <Route path="/contact" component={Contact}/>
+              
             </Switch>
         </Router>
       );

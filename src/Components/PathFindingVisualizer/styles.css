@@ -1,0 +1,95 @@
+#gridCanvas {
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    
+    width: 800px;
+    max-width: 800px;
+
+    height: 500px;
+    max-height: 500px;
+    
+}
+
+#setup-form label {
+    color: white;
+    font-size: 20px;
+}
+canvas {
+    border: 2px solid black;
+    margin: 0;
+}
+
+#setup-form button {
+    outline: none;
+}
+
+/*
+================NEWAPPROACH================
+*/
+#board {
+
+    border: 1px solid black;
+
+}
+
+
+/*
+================NEWAPPROACH================
+*/
+
+#outer {
+    display: flex;
+}
+
+#positions-box {
+
+    border: 2px solid white;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+}
+
+#positions-box div {
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        justify-content: center;
+}
+
+button.setbutton {
+    border-radius: 10px;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+button.bigbutton {
+
+        font-size: 30px;
+        width: fit-content;
+        margin: 10px;
+        height: fit-content;
+        background-color: white;
+        border-radius: 10px;
+        border: 1px solid black;
+}
+
+#setup-form {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+
+input[type="text"], input[type="text"]:focus {
+
+    width: 5ch;
+    height: 30px;
+    font-size: auto;
+    text-align: center;
+    border: 1px solid black;
+}
+
+
+#visualizeCheckBox {
+    margin-right: 10px;
+}

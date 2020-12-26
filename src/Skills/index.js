@@ -1,5 +1,6 @@
 import React from 'react';
 import {MediaLink} from '../Components/Media';
+import PathFindingVisualizer from '../Components/PathFindingVisualizer';
 import github_logo from '../images/github_logo.png';
 import NodeLogo from '../images/NodeLogo.png';
 import PythonLogo from '../images/PythonLogo.png';
@@ -12,14 +13,16 @@ export default class Skills extends React.Component {
     render() {
         return (
             <div id="skillsContainer">
-                <span className="title">Skills Page</span>
 
-               
-                <p className="skillsDescription">
+               <div className="sectionContainer">
+                   <span className="title">Skills</span>
+                
+                <p className="description">
                     Being a 3rd year computer science student with internship experience,
                     there are many technical and soft skills I have cultivated. Below
                     are some of the technologies I am experienced with
                 </p>
+                </div>
                
 
                 <ul className="techsContainer">
@@ -43,19 +46,32 @@ export default class Skills extends React.Component {
                     </li>
                 </ul>
 
+                <div className="sectionContainer">
+                    <p className="description">
+                        Here is a sample of one of my projects. It is a visualization
+                        of the A-Star path finding algorithm. All you need to do to play around with it 
+                        is draw some obstacles onto the grid with the mouse and press the Run Algorithm.
+                        Thats it, its super easy to use! You can also move around the start and end positions
+                        using the form on the right. Try it!
+                    </p>
+                </div>
+                <div id="pathFindContainer">
+                    <PathFindingVisualizer/>
+                </div>
+                
 
-
-
-                <p className="skillsDescription">
-                    You can check out my github to look at the projects I have worked on!
-                </p>
-                <div className="mediaContainer">
-                    <div id="githubLink" className="mediaLinkContainer">
-                            <MediaLink  href="https://github.com/RuneMyrskog" 
-                                    icon={github_logo} 
-                                    text="github.com/RuneMyrskog"/>
-                    </div>
-                </div> 
+                <div id="skillsGithubLinkContainer">
+                    <p>
+                        You can check out my github to look at the projects I have worked on!
+                    </p>
+                    <div className="mediaContainer">
+                        <div id="githubLink" className="mediaLinkContainer">
+                                <MediaLink  href="https://github.com/RuneMyrskog" 
+                                        icon={github_logo} 
+                                        text="github.com/RuneMyrskog"/>
+                        </div>
+                    </div> 
+                </div>
             </div>
         );
     }

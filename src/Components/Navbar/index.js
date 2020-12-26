@@ -1,20 +1,37 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import logo from '../../images/logo.jpeg';
+import profilepic from '../../images/profilepic.jpeg';
+import githubLogo from '../../images/github_logo.png';
+import linkedInLogo from '../../images/linkedin_logo.jpg';
 import './styles.css'
 
 export default class Navbar extends React.Component {
 
     render () {
       return (
-        <div id='navbar'>
-          <img id="logo" src={logo} alt="logo"></img>
-          <ul>
-            <NavLink to="/" name="Home"/>
-            <NavLink to="/about" name="About"/>
-            <NavLink to="/skills" name="Skills"/>
-            <NavLink to="/contact" name="Contact Me"/>
-          </ul>
+        <div>
+          <div id="navbar"> 
+            <img id="navPic" src={profilepic} alt="profile"/>
+            <span id="navName">Rune Myrskog</span>
+
+          <div id="navRightContainer">
+            <ul>
+              <NavLink to="/" name="About Me"/>
+              <NavLink to="/skills" name="Skills"/>
+              <NavLink to="/resume" name="Resume"/>
+              <NavLink to="/contact" name="Contact Me"/>
+            </ul>
+            
+              <a href="https://github.com/RuneMyrskog">
+                <img className="navLogo" src={githubLogo} alt="github"/>
+              </a>
+              <a href="https://www.linkedin.com/in/rune-myrskog-21a7901a8/">
+                <img className="navLogo" src={linkedInLogo} alt="linkdin"/>
+              </a>
+              </div>
+            
+          </div>
+          <div id="spacer"></div>
         </div>
       );
     }
@@ -25,7 +42,7 @@ export default class Navbar extends React.Component {
       return (
         <li>
           <Link to={this.props.to}>
-            <button id="navButton">{this.props.name}</button>
+            <span className="navSpan">{this.props.name}</span>
           </Link>
         </li>
       );

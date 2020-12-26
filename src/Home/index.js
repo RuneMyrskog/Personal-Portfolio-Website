@@ -8,7 +8,7 @@ export default class Home extends React.Component {
         <div id="homeContainer">
             <img id="profilepic" src={profilepic} alt="profile pic"></img>
             <Name/>
-            <Description/>
+            <AboutSection/>
             
         </div>
         );
@@ -26,16 +26,20 @@ class Name extends React.Component {
     }
 }
   
-class Description extends React.Component {
+class AboutSection extends React.Component {
 
     render (){
         return (
-            <div id="descriptionContainer">
-            <p id="description">
-            Reliable software developer motivated to build relationships 
-            and looking to utilize my software skills and knowledge to make valuable 
-            contributions to a team.
-            </p>
+            <div className="sectionContainer">
+                <span className="title">About Me</span>
+                <p className="description">
+                    My name is Rune Myrskog. I am a <strong>software developer</strong> currently 
+                    in My 3rd undergraduate year as a <strong>computer science specialist</strong> at 
+                    the <a href="https://www.utoronto.ca/">University of Toronto, St. George Campus</a>. 
+                    I enjoy all kinds of software development, with a particular interest in <strong>Machine Learning</strong>, 
+                    I welcome challenging experiences that I can learn from. <br/><br/> I also enjoy working on my fitness,
+                    binging tv shows, and playing guitar.
+                </p>
             </div>
         );
     }

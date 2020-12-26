@@ -1,5 +1,5 @@
 body {
-    background-image: url('./images/Backround.jpg');
+    background-color: rgb(245, 245, 245);
     margin: 0;
 }
 
@@ -7,7 +7,35 @@ html {
     min-height: 100%;
 }
 
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+* {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #333;
+}
+
+.sectionContainer {
+  margin-top: 50px;
+  margin-left: 60px;
+  margin-right: 60px;
+  text-align: left;
+}
+
 .title {
-    color: white;
-    font-size: 50px;
+  font-size: 30px;
+  text-align: left;
+  display: block;
+  
+  border-bottom: 1px solid #999;
+}
+
+.description {
+  line-height: 25px;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 25;
+
 }

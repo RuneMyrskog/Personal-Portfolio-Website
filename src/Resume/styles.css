@@ -1,0 +1,9 @@
+#resumeContainer {
+    margin-top: 5px;
+    text-align: center;
+}
+.resumePic {
+    width: 90%;
+    margin: auto;
+    border: 1px solid black;
+}

@@ -1,19 +1,14 @@
-#skillsContainer {
-    text-align: center;
-    margin-top: 30px;
-}
-
 .techsContainer {
     display: flex;
     justify-content: space-around;
-    
     margin: auto;
     margin-top: 50px;
     max-width: 800px;
+    text-align: center;
 }
 
 .techsContainer li{
-    display: inline-block
+    display: inline-block;
 }
 
 .techContainer{
@@ -24,7 +19,7 @@
 
 .techSpan {
     display: block;
-    color: white;
+    
     font-style: oblique;
     font-size: 20px;
     margin-top:10px;
@@ -35,15 +30,15 @@
 }
 
 
-
-.skillsDescription {
-    max-width: 1000px;
-    color: white;
-    font-size: 20px;
-    margin:auto;
-    margin-top: 30px;
+#skillsGithubLinkContainer {
+    text-align: center;
 }
 
-#githubLink {
-    margin-top: 50px;
+#pathFindContainer {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(44, 44, 58);
+    border-radius: 15px;
+    border: 2px solid white;
+    margin-top: 30px;
 }
