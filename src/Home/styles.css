@@ -1,23 +1,65 @@
 #homeContainer {
-    padding-top: 50px;
-    display: block;
-    margin: auto;
+    display: flex;
     text-align: center;
-  }
+}
   
+#leftContainer {
+  margin-top: 60px;
+  justify-content: space-around;
+  width: 20%;
+}
+
 #profilepic {
-  display: block;
+
   width: 230px;
   border-radius: 50%;
   margin: auto;
-  border: 3px solid white;
+  border: 4px solid white;
+  
 }
 
 #name {
   font-size: 35px;
+}
+
+#externalsContainer {
+  
+  width: fit-content;
+  margin: auto;
+  margin-top: 50px;
+}
+
+#externalsContainer li {
+  margin-top: 30px;
+}
+
+#rightContainerTopSpacer {
+  height: 50px;
+}
+
+#rightContainer {
+  width: 80%;
+  height: 90vh;
+  overflow-y: scroll;
+  flex: 1 1 auto;
+  margin-right: 150px;
+  margin-left: 20px;
   
 }
 
+
+
+#profilepicNameContainer {
+  display: block;
   
-  
+
+}
+
+
+#aboutMeDescription {
+  font-size: 20px;
+  line-height: 50px;
+}
+
+
   

@@ -1,12 +1,10 @@
 import React from 'react';
-import {MediaLink} from '../Components/Media';
-import PathFindingVisualizer from '../Components/PathFindingVisualizer';
-import github_logo from '../images/github_logo.png';
 import NodeLogo from '../images/NodeLogo.png';
 import PythonLogo from '../images/PythonLogo.png';
 import HtmlCssJsLogo from '../images/HtmlCssJsLogo.png';
 import ReactLogo from '../images/ReactLogo.png';
 import CLogo from '../images/CLogo.png';
+import MongoDBLogo from "../images/MongoDBLogo.png";
 import './styles.css';
 
 export default class Skills extends React.Component {
@@ -44,6 +42,9 @@ export default class Skills extends React.Component {
                     <li>
                         <Technology src={CLogo} label="C" alt="C Logo"/>
                     </li>
+                    <li>
+                        <Technology src={MongoDBLogo} label="MongoDB" alt="MongoDB Logo"/>
+                    </li>
                 </ul>
 
                 <div className="sectionContainer">
@@ -54,23 +55,6 @@ export default class Skills extends React.Component {
                         Thats it, its super easy to use! You can also move around the start and end positions
                         using the form on the right. Try it!
                     </p>
-                </div>
-                <div id="pathFindContainer">
-                    <PathFindingVisualizer/>
-                </div>
-                
-
-                <div id="skillsGithubLinkContainer">
-                    <p>
-                        You can check out my github to look at the projects I have worked on!
-                    </p>
-                    <div className="mediaContainer">
-                        <div id="githubLink" className="mediaLinkContainer">
-                                <MediaLink  href="https://github.com/RuneMyrskog" 
-                                        icon={github_logo} 
-                                        text="github.com/RuneMyrskog"/>
-                        </div>
-                    </div> 
                 </div>
             </div>
         );

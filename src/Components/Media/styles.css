@@ -1,13 +1,14 @@
 
 .media{
-    font-size: 20px;
+    font-size: 15px;
     text-align: left;
     display: table;
     height: fit-content;
+    
 }
 
 .mediaIcon {
-    width: 40px;
+    width: 30px;
     border-radius:15%;
     margin-right: 10px;
 }
@@ -23,8 +24,11 @@
     text-decoration: none;
 }
 
+.mediaLink {
+    color: blue;
+}
+
 .mediaContainer {
-    
     text-align: center;
     margin: auto;
     padding: 20px;

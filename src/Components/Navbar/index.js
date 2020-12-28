@@ -17,9 +17,9 @@ export default class Navbar extends React.Component {
           <div id="navRightContainer">
             <ul>
               <NavLink to="/" name="About Me"/>
-              <NavLink to="/skills" name="Skills"/>
+              {/* <NavLink to="/skills" name="Skills"/> */}
               <NavLink to="/resume" name="Resume"/>
-              <NavLink to="/contact" name="Contact Me"/>
+              {/* <NavLink to="/contact" name="Contact Me"/> */}
             </ul>
             
               <a href="https://github.com/RuneMyrskog">
