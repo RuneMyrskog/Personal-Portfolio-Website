@@ -10,6 +10,7 @@ import profilepic from '../images/profilepic.jpeg';
 import emailIcon from "../images/email-icon.png";
 import locationIcon from "../images/location-icon.png";
 import githubIcon from "../images/github_logo.png";
+import linkedinIcon from "../images/linkedin-icon.png";
 
 export default class Home extends React.Component {
     render (){
@@ -25,6 +26,7 @@ export default class Home extends React.Component {
                     <MediaSpan icon={locationIcon} text="Maple, Ontario"/>
                     <MediaSpan icon={emailIcon} text="runemyrskog@gmail.com"/>
                     <MediaLink icon={githubIcon} text="github.com/RuneMyrskog" href="https://github.com/RuneMyrskog"/>
+                    <MediaLink icon={linkedinIcon} text="linkedin" href="https://www.linkedin.com/in/rune-myrskog-21a7901a8/"/>
                 </div>
             </div>
             <div id="rightContainer">

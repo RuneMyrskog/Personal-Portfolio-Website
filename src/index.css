@@ -1,5 +1,6 @@
 body {
-    background-color: rgb(245, 245, 245);
+    /* background-color: rgb(245, 245, 245); */
+    background-color: white;
     margin: 0;
 }
 
@@ -15,10 +16,12 @@ a {
 * {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   color: #333;
+  transition: all .2s ease-in-out;
 }
 
 .sectionContainer {
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-bottom: 20px;
   text-align: left;
 }
 

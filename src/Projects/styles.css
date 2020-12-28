@@ -27,9 +27,12 @@
     text-align: left;
     margin: auto;
     margin-left: 100px;
+    text-align: center;
     
 }
 
 .projectDescription {
     margin: auto;
+    font-size: 3vh;
+    line-height: 4.5vh;
 }   

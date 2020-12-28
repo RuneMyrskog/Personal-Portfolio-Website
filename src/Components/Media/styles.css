@@ -8,16 +8,16 @@
 }
 
 .mediaIcon {
-    width: 30px;
+    width: 3vh;
     border-radius:15%;
-    margin-right: 10px;
+    margin-right: 2vh;
+    
 }
 
 .mediaLink, .mediaSpan {
     vertical-align: middle;
     display: table-cell;
     vertical-align: middle;
-    margin-left: 20px;
     font-style: italic;
     color: black;
  
@@ -31,7 +31,7 @@
 .mediaContainer {
     text-align: center;
     margin: auto;
-    padding: 20px;
+    padding: 1.5vh;
     width: fit-content;
     overflow: hidden;
 }
