@@ -1,6 +1,37 @@
-.projectExampleContainer {
-    margin-top: 20px;
-    display: flex;
+@media (max-width:1000px) {
+
+    .projectExampleContainer {
+        margin-top: 2vmin;
+        text-align: center;
+    }
+
+    .projectDescriptionContainer {
+        width: 100%;
+        text-align: left;
+        margin: auto;
+
+        text-align: center;
+
+    }
+
+}
+
+@media (min-width:1001px) {
+
+    .projectExampleContainer {
+        margin-top: 20px;
+        display: flex;
+    }
+
+    .projectDescriptionContainer {
+        width: 100%;
+        text-align: left;
+        margin: auto;
+        margin-left: 2vh;
+        text-align: center;
+
+    }
+
 }
 
 .projectImageContainer {
@@ -22,14 +53,7 @@
     cursor: pointer;
 }
 
-.projectDescriptionContainer {
-    width: 100%;
-    text-align: left;
-    margin: auto;
-    margin-left: 100px;
-    text-align: center;
-    
-}
+
 
 .projectDescription {
     margin: auto;

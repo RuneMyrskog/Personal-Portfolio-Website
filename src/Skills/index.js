@@ -16,8 +16,7 @@ export default class Skills extends React.Component {
                    <span className="title">Skills</span>
                 
                 <p className="description">
-                    Being a 3rd year computer science student with internship experience,
-                    there are many technical and soft skills I have cultivated. Below
+                    There are many technical and soft skills I have cultivated. Below
                     are some of the technologies I am experienced with
                 </p>
                 </div>
@@ -47,15 +46,6 @@ export default class Skills extends React.Component {
                     </li>
                 </ul>
 
-                <div className="sectionContainer">
-                    <p className="description">
-                        Here is a sample of one of my projects. It is a visualization
-                        of the A-Star path finding algorithm. All you need to do to play around with it 
-                        is draw some obstacles onto the grid with the mouse and press the Run Algorithm.
-                        Thats it, its super easy to use! You can also move around the start and end positions
-                        using the form on the right. Try it!
-                    </p>
-                </div>
             </div>
         );
     }

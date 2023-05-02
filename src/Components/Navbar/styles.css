@@ -33,7 +33,7 @@
 
 .navSpan {
   float: right;
-  margin-right: 50px;
+  margin-right: 2vw;
   margin-top: 1.5vh;
   padding-bottom: 10px;
   font-size: 2vh;
@@ -45,6 +45,10 @@
   transform: scale(1.03);
   /* color: black; */
   color: white;
+}
+
+#navLeftContainer {
+  margin-left: 1vw
 }
 
 #navRightContainer {
@@ -61,11 +65,11 @@
 
 #navPic {
   float: left;
-  margin-left: 7vh;
+  margin-left: 5vw;
   height: 3.5vh;
   border-radius: 50%;
   margin-top: 0.5vh;
-  border: 2px solid white;
+  border: 0.3vmin solid white;
 }
 
 #navName {

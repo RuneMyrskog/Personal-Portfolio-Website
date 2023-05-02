@@ -1,14 +1,60 @@
+
 #homeContainer {
-    display: flex;
     text-align: center;
-}
-  
+  }
+
 #leftContainer {
   margin-top: 10vh;
   margin-left: 5vh;
+  margin-right: 5vh;
+  text-align: center;
   justify-content: space-around;
-  width: 20vw;
 }
+
+#rightContainer {
+  padding-left: 5vw;
+  padding-right: 5vw;
+  width: 80%;
+  height: 100vh;
+  /*overflow-y: scroll;*/
+  flex: 1 1 auto;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  background-color: white;
+}
+
+
+
+@media (min-width:1000px){
+  #homeContainer {
+      display: flex;
+      text-align: center;
+  }
+
+  #leftContainer {
+    margin: 5vh;
+    margin-top: 10vh;
+    justify-content: space-around;
+    width: 20%;
+  }
+
+  #rightContainer {
+    padding-left: 5vh;
+    padding-right: 5vh;
+    width: 80%;
+    height: 100vh;
+    overflow-y: scroll;
+    flex: 1 1 auto;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    background-color: white;
+  }
+}
+
+
+  
+
+
 
 #profilepic {
 
@@ -25,7 +71,7 @@ margin: auto;
 }
 
 #name {
-  font-size: 2vw;
+  font-size: 150%;
   white-space: nowrap;
 }
 
@@ -42,19 +88,6 @@ margin: auto;
 
 #rightContainerTopSpacer {
   height: 10vh;
-}
-
-#rightContainer {
-  padding-left: 5vh;
-  padding-right: 5vh;
-  width: 80%;
-  height: 100vh;
-  overflow-y: scroll;
-  flex: 1 1 auto;
-  margin-right: 20vh;
-  margin-left: 20px;
-  background-color: white;
-  
 }
 
 

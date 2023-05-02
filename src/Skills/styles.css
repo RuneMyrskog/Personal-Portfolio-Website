@@ -3,8 +3,8 @@
     justify-content: space-around;
     margin: auto;
     margin-top: 50px;
-    max-width: 800px;
     text-align: center;
+    padding: 0px;
 }
 
 .techsContainer li{
@@ -21,12 +21,12 @@
     display: block;
     
     font-style: oblique;
-    font-size: 20px;
+    font-size: 1.5vmax;
     margin-top:10px;
 }
 
 .techLogo {
-    height: 80px;
+    width: 8vmax;
 }
 
 

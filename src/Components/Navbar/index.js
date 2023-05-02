@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import profilepic from '../../images/profilepic.jpeg';
+import profilepic from '../../images/profilepic.jpg';
 import githubLogo from '../../images/github_logo.png';
 // import linkedInLogo from '../../images/linkedin_logo.jpg';
 import './styles.css'
@@ -11,10 +11,8 @@ export default class Navbar extends React.Component {
       return (
         <div id="navbar"> 
           <div id="navLeftContainer">
-            <img id="navPic" src={profilepic} alt="profile"/>
             <span id="navName">Rune Myrskog</span>
           </div>
-
           <div id="navRightContainer">
             <ul>
               <NavLink to="/" name="About Me"/>
