@@ -3,19 +3,21 @@
 }
 
 #navbar {
+  padding-top: 1vh;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   position: fixed;
   top: 0px;
   left: 0px;
   right: 0px;
-  height: 5vh;
+  height: 1.5rem;
   /* background-color: #f8f8f8; */
-  background-color: black;
+  background-color: #180f2f;
   border-bottom: 1px solid #ddd;
 }
 
-#spacer {
-  height: 5vh;
+#externalsList {
+  padding-left: 1rem;
+  border-left: 1px solid white;
   
 }
 
@@ -23,7 +25,6 @@
   display: flex;
   float: right;
   list-style: none;
-  justify-content: space-around;
 }
 
 #navbar a {
@@ -34,8 +35,6 @@
 .navSpan {
   float: right;
   margin-right: 2vw;
-  margin-top: 1.5vh;
-  padding-bottom: 10px;
   font-size: 2vh;
   transition: all .05s ease-in-out;
   color: lightgray;
@@ -56,9 +55,7 @@
   float: right;
 }
 
-.navLogo {
-  height: 3vh;
-  margin-top: 1vh;
+#navRightContainer .icon {
   margin-right: 20px;
   border-radius: 20%;
 }
@@ -73,7 +70,6 @@
 }
 
 #navName {
-  margin-top: 1.5vh;
   float: left;
   margin-left: 1vh;
   font-size: 2vh;

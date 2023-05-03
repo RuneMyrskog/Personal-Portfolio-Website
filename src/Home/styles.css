@@ -1,90 +1,72 @@
-
-#homeContainer {
-    text-align: center;
-  }
-
-#leftContainer {
-  margin-top: 10vh;
+#topContainer {
+  margin-top: 40vh;
   margin-left: 5vh;
   margin-right: 5vh;
-  text-align: center;
-  justify-content: space-around;
+  height: 65vh;
+}
+
+#titleSectionContainer {
+  display: block;
+}
+
+#title {
+  font-size: 5rem;
+}
+
+#subtitle {
+  font-size: 2rem;
 }
 
 #rightContainer {
   padding-left: 5vw;
   padding-right: 5vw;
   width: 80%;
-  height: 100vh;
-  /*overflow-y: scroll;*/
   flex: 1 1 auto;
   margin-right: 5vw;
   margin-left: 5vw;
-  background-color: white;
+  /* background-color: white; */
 }
 
 
 
 @media (min-width:1000px){
-  #homeContainer {
-      display: flex;
-      text-align: center;
-  }
 
-  #leftContainer {
-    margin: 5vh;
-    margin-top: 10vh;
-    justify-content: space-around;
-    width: 20%;
+  #topContainer {
+    margin-top: 40vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    height: 65vh;
   }
 
   #rightContainer {
     padding-left: 5vh;
     padding-right: 5vh;
     width: 80%;
-    height: 100vh;
-    overflow-y: scroll;
     flex: 1 1 auto;
     margin-right: 5vw;
     margin-left: 5vw;
-    background-color: white;
+    /* background-color: white; */
   }
 }
 
-
-  
-
-
-
 #profilepic {
-
-  width: 80%;
+  width: 5rem;
   border-radius: 50%;
+  border: 2px solid white;
   margin: auto;
   
-}
-
-#nameContainer {
-width: 80%;
-max-height: 10vh;
-margin: auto;
-}
-
-#name {
-  font-size: 150%;
-  white-space: nowrap;
 }
 
 #externalsContainer {
-  
-  width: fit-content;
+  justify-content: space-around;
+  width: 100%;
   margin: auto;
-  margin-top: 4vh;
+  margin-top: 2vh;
+
 }
 
-#externalsContainer li {
-  margin-top: 4vh;
-}
 
 #rightContainerTopSpacer {
   height: 10vh;
@@ -97,11 +79,6 @@ margin: auto;
 
 }
 
-
-#aboutMeDescription {
-  font-size: 3vh;
-  line-height: 6vh;
-}
 
 
   

@@ -9,7 +9,7 @@ export default class Projects extends React.Component {
 
     render() {
         return (
-            <div id="projectsContainer">
+            <div id="projects">
                 <div className="sectionContainer">
                     <span className="title">Projects</span>
                     <p className="description">

@@ -1,21 +1,23 @@
 body {
     /* background-color: rgb(245, 245, 245); */
-    background-color: white;
+    background-color: #180f2f;
     margin: 0;
 }
 
 html {
     min-height: 100%;
+    scroll-behavior: smooth;
 }
 
 a {
     text-decoration: none;
-    color: blue;
+    color: rgb(108, 211, 255);
 }
 
 * {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  color: #333;
+  color: #2e3a37;
+  color: white;
   transition: all .2s ease-in-out;
 }
 
@@ -23,14 +25,6 @@ a {
   margin-top: 30px;
   margin-bottom: 20px;
   text-align: left;
-}
-
-.title {
-  font-size: 30px;
-  text-align: left;
-  display: block;
-  
-  border-bottom: 1px solid #999;
 }
 
 .description {

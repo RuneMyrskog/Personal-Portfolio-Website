@@ -15,16 +15,17 @@ import './index.css'
 class App extends React.Component {
   render(){
     return (
+      <>
+        <Navbar />
         <Router>
-            <Navbar/>
             <Switch>
               <Route path="/" exact component={Home}/>
               <Route path="/resume" component={Resume}/>
               <Route path="/skills" component={Skills}/>
               <Route path="/contact" component={Contact}/>
-              
             </Switch>
         </Router>
+      </>
       );
     }
 }
