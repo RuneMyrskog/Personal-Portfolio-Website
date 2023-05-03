@@ -1,20 +1,68 @@
+#homeContainer {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
 #topContainer {
   margin-top: 40vh;
   margin-left: 5vh;
-  margin-right: 5vh;
   height: 65vh;
+}
+
+#downarrow {
+  fill: white;
+  width: 3rem;
+  float: right;
+  margin-top:25vh;
+}
+
+#downarrow:hover {
+  cursor: pointer;
 }
 
 #titleSectionContainer {
   display: block;
 }
 
-#title {
+#nameTitle {
   font-size: 5rem;
+  animation: fadein1 ease-in 2.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
-#subtitle {
+@keyframes fadein1 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#nameSubtitle {
   font-size: 2rem;
+  animation: fadein2 ease-in 3.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein2 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 #rightContainer {
@@ -33,10 +81,10 @@
 
   #topContainer {
     margin-top: 40vh;
-    padding-left: 5vh;
-    padding-right: 5vh;
-    margin-right: 5vw;
+    padding-left: 5vmin;
+    padding-right: 5vmin;
     margin-left: 5vw;
+    margin-right: 5vw;
     height: 65vh;
   }
 
@@ -49,6 +97,11 @@
     margin-left: 5vw;
     /* background-color: white; */
   }
+}
+
+
+.sectionTitle {
+  font-size: 2.5rem;
 }
 
 #profilepic {

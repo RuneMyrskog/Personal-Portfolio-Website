@@ -1,6 +1,17 @@
 #projects {
     padding-top: 1rem;
 }
+.projectExampleContainer.right {
+    text-align: right;
+}
+
+.projectExampleContainer a {
+    text-decoration: underline;
+}
+
+.projectExampleContainer.left {
+    text-align: left;
+}
 
 @media (max-width:1000px) {
 
@@ -20,7 +31,7 @@
 
 }
 
-@media (min-width:1001px) {
+@media (min-width:1000px) {
 
     .projectExampleContainer {
         margin-top: 20px;
@@ -29,19 +40,16 @@
 
     .projectDescriptionContainer {
         width: 100%;
-        text-align: left;
         margin: auto;
         margin-left: 2vh;
-        text-align: center;
-
     }
 
 }
 
 .projectImage {
 
-    width: 180px;
-    height: 180px;
+    width: 30rem;
+    height: 20rem;
     margin: 20px;
     border: 1px solid black;
     border-radius: 5px;

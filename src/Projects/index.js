@@ -4,6 +4,7 @@ import TreeJSPic from "../images/TreeJSPic.png";
 import pathFindPic from "../images/pathFindPic.png";
 import RejuvenateHomePic from "../images/RejuvenateHomePic.png";
 import spaceAdventurePic from "../images/spaceAdventurePic.jpg";
+import spidrPic from "../images/spidrPic.png"
 
 export default class Projects extends React.Component {
 
@@ -11,12 +12,9 @@ export default class Projects extends React.Component {
         return (
             <div id="projects">
                 <div className="sectionContainer">
-                    <span className="title">Projects</span>
-                    <p className="description">
-                        Here are some of the most recent projects I have worked on
-                    </p>
+                    <span className="sectionTitle">Projects</span>
 
-                    <Project image={TreeJSPic} alt="TreeJS" href="https://treejslib.herokuapp.com">
+                    <Project flipx={false} image={TreeJSPic} alt="TreeJS" href="https://treejslib.herokuapp.com">
                         <p className="projectDescription">
                             TreeJS is a front end Javascript library. It is written to provide a 
                             simple way of displaying customized tree structures in the DOM.
@@ -25,7 +23,7 @@ export default class Projects extends React.Component {
                         </p>
                     </Project>
 
-                    <Project image={pathFindPic} alt="astar visualization" href="https://astarvisualize.herokuapp.com">
+                    <Project flipx={true} image={pathFindPic} alt="astar visualization" href="https://astarvisualize.herokuapp.com">
                         <p className="projectDescription">
                             This project is an implementation and visualiztion of the A-Star path finding 
                             algorithm. This project was written as an application in python and as a 
@@ -34,7 +32,7 @@ export default class Projects extends React.Component {
                         </p>
                     </Project>
 
-                    <Project image={RejuvenateHomePic} alt="Rejuvenate website" href="https://projectrejuvenate.herokuapp.com">
+                    <Project flipx={false} image={RejuvenateHomePic} alt="Rejuvenate website" href="https://projectrejuvenate.herokuapp.com">
                         <p className="projectDescription">
                             Rejuvenate is a social media website targeted towards health enthusiasts. It was created
                             to be used as a forum for sharing advice and motivation. This is a full stack application
@@ -43,13 +41,19 @@ export default class Projects extends React.Component {
                         </p>
                     </Project>
 
-                    <Project image={spaceAdventurePic} alt="space adventure" href="https://github.com/RuneMyrskog/SpaceAdventure-A-2D-Android-Game">
+                    <Project flipx={true} image={spaceAdventurePic} alt="space adventure" href="https://github.com/RuneMyrskog/SpaceAdventure-A-2D-Android-Game">
                         <p className="projectDescription">
                             Space Adventure is an android game developed in Java by myself and 3 other contributors
                             listed in the <a href="https://github.com/RuneMyrskog/SpaceAdventure-A-2D-Android-Game">github repository</a>. The game consists of several 2d minigames played as 
                             sequential levels
                         </p>
                     </Project>
+                    {/* <Project flipx={false} image={spidrPic} alt="spidr" href="https://github.com/RuneMyrskog/SpaceAdventure-A-2D-Android-Game">
+                        <p className="projectDescription">
+                            Spidr is a cross-platform social media app I helped to develop during its inception alongside two other software developers. The app was written using Dart/Flutter. 
+                            I created the search engine using a combination of Algolia and firebase cloud functions, and also programmed animations used within the app.
+                        </p>
+                    </Project> */}
 
                 </div>
             </div>
@@ -58,17 +62,30 @@ export default class Projects extends React.Component {
 }
 
 class Project extends React.Component {
-    render() {
+    imageSection() {
         return (
-            <div className="projectExampleContainer">
-                <div className="projectImageContainer">
-                    <a href={this.props.href}>
-                        <img className="projectImage" src={this.props.image} alt={this.props.alt}/>
-                    </a>
-                </div>
-                <div className="projectDescriptionContainer">
-                    {this.props.children}
-                </div>
+        <div className="projectImageContainer">
+            <a href={this.props.href}>
+                <img className="projectImage" src={this.props.image} alt={this.props.alt} />
+            </a>
+        </div>
+        );
+    }
+
+    descriptionSection() {
+        return (
+        <div className="projectDescriptionContainer">
+            {this.props.children}
+        </div>
+        );
+    }
+
+    render() {
+        const className = this.props.flipx ? "projectExampleContainer right" : "projectExampleContainer left"
+        return (
+            <div className={className}>
+                {this.props.flipx ? this.descriptionSection() : this.imageSection()}
+                {this.props.flipx ? this.imageSection() : this.descriptionSection()}
             </div>
         );
     }

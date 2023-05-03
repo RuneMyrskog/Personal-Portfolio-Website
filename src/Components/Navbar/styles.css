@@ -11,8 +11,8 @@
   right: 0px;
   height: 1.5rem;
   /* background-color: #f8f8f8; */
-  background-color: #180f2f;
-  border-bottom: 1px solid #ddd;
+  background-color: transparent;
+  /* border-bottom: 1px solid #ddd; */
 }
 
 #externalsList {
