@@ -1,0 +1,35 @@
+
+.experienceTitle {
+    font-size: 1.5rem;
+}
+
+.experienceExampleContainer {
+    margin-top:2rem;
+}
+
+.experienceTitleContainer {
+    padding-right: 1rem;
+    border-bottom: 1px solid white;
+    margin-bottom: 1rem;
+    width: 30rem;
+    max-width: 70vw;
+}
+
+.experienceDescriptionContainer p {
+    font-size: 1.2rem;
+}
+
+@media (min-width: 1000px) {
+    .experienceExampleContainer {
+        display: flex;
+    }
+    .experienceTitleContainer {
+        border-bottom: none;
+        border-right: 1px solid white;
+    }
+
+    .experienceDescriptionContainer {
+        width: 40vw;
+    }
+}
+

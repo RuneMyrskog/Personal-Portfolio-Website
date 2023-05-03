@@ -8,9 +8,9 @@ export default class Navbar extends React.Component {
     render () {
       return (
         <div id="navbar"> 
-          <div id="navLeftContainer">
+          {/* <div id="navLeftContainer">
             <span id="navName">R</span>
-          </div>
+          </div> */}
           <div id="navRightContainer">
 
             <ul id="navLinkList">
@@ -18,12 +18,14 @@ export default class Navbar extends React.Component {
               <NavLink to="/#experience" name="Experience" />
               <NavLink to="/#resume" name="Resume"/>
               <NavLink to="/#Contact" name="Contact" />
-            </ul>
+            
             
             <ul id="externalsList">
               <GithubLink />
               <EmailLink />
               <LinkedinLink />
+            </ul>
+            
             </ul>
 
           </div>

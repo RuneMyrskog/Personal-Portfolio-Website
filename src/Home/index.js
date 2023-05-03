@@ -12,12 +12,14 @@ export default class Home extends React.Component {
         <div id="homeContainer">
             <div id="topContainer">
                 <TitleSection />
-                <DownArrow/>
+                <div id="downArrowContainer">
+                    <DownArrow/>
+                </div>
             </div>
             
             <div id="rightContainer">
                 <Projects/>
-                {/* <Experiences/> */}
+                <Experiences/>
                 <Resume/>
                 <Contact/>
             </div>

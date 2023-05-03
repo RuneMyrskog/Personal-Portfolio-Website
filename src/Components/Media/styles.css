@@ -6,6 +6,13 @@
     transition: all .05s ease-in-out;
 }
 
+@media (max-width: 400px) {
+    .icon {
+        height: 1rem;
+        max-width: 1rem;
+    }
+}
+
 .icon:hover {
     transform: scale(1.2);
     fill: white;

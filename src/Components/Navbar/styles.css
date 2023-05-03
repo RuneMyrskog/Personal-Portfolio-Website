@@ -14,30 +14,40 @@
   background-color: transparent;
   /* border-bottom: 1px solid #ddd; */
 }
+#navLinkList {
+  padding-left: 0rem;
+  width:100%;
+  justify-content: space-around;
+}
 
 #externalsList {
   padding-left: 1rem;
-  border-left: 1px solid white;
-  
 }
 
 #navbar ul {
   display: flex;
-  float: right;
+  
   list-style: none;
 }
 
 #navbar a {
   text-decoration: none;
-  float: right;
+ 
 }
 
 .navSpan {
-  float: right;
-  margin-right: 2vw;
-  font-size: 2vh;
+  
+  margin-right: 1.5vw;
+  font-size: 1.2rem;
   transition: all .05s ease-in-out;
   color: lightgray;
+}
+
+@media (max-width: 400px) {
+  .navSpan {
+    font-size: 0.8rem;
+  }
+
 }
 
 .navSpan:hover {
@@ -56,25 +66,11 @@
 }
 
 #navRightContainer .icon {
-  margin-right: 20px;
+  margin-right: 1rem;
   border-radius: 20%;
 }
 
-#navPic {
-  float: left;
-  margin-left: 5vw;
-  height: 3.5vh;
-  border-radius: 50%;
-  margin-top: 0.5vh;
-  border: 0.3vmin solid white;
-}
 
-#navName {
-  float: left;
-  margin-left: 1vh;
-  font-size: 2vh;
-  color: white;
-}
 
 
 
