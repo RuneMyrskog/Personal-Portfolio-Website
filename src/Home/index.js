@@ -3,7 +3,7 @@ import './styles.css';
 import Projects from "../Projects";
 import Contact from "../Contact";
 import Resume from '../Resume';
-import Experience from '../Experience';
+import Experiences from '../Experience';
 import { DownArrow } from '../Components/Media';
 
 export default class Home extends React.Component {
@@ -17,7 +17,7 @@ export default class Home extends React.Component {
             
             <div id="rightContainer">
                 <Projects/>
-                <Experience/>
+                {/* <Experiences/> */}
                 <Resume/>
                 <Contact/>
             </div>

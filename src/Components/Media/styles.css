@@ -1,14 +1,28 @@
 .icon {
-    height: 2.5vh;
-    max-width: 2.5vh;
+    height: 1.5rem;
+    max-width: 1.5rem;
     fill: lightgray;
     margin-bottom:auto;
+    transition: all .05s ease-in-out;
 }
 
 .icon:hover {
     transform: scale(1.2);
     fill: white;
 }
+
+.resumeIcon {
+    height: 3rem;
+    width: 3rem;
+    fill: lightgray;
+    transition: all .05s ease-in-out;
+}
+.resumeIcon:hover {
+    transform: scale(1.2);
+    fill: white;
+}
+
+
 
 .mediaLink {
     text-align-last: center;
