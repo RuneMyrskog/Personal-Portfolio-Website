@@ -17,7 +17,6 @@ export default class Navbar extends React.Component {
               <NavLink to="/#projects" name="Projects"/>
               <NavLink to="/#experience" name="Experience" />
               <NavLink to="/#resume" name="Resume"/>
-              <NavLink to="/#Contact" name="Contact" />
             
             
             <ul id="externalsList">
@@ -25,7 +24,7 @@ export default class Navbar extends React.Component {
               <EmailLink />
               <LinkedinLink />
             </ul>
-            
+
             </ul>
 
           </div>

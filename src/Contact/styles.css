@@ -3,14 +3,21 @@
 }
 
 .contactSectionTitle {
-    font-size: 2rem;
+    font-size: 1.5rem;
+}
+#contactBackground {
+    text-align: center;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    width: fit-content;
+    background-color: rgba(107, 107, 107, 0.224);
+    border-radius: 5rem;
+    display: inline-block;
 }
 
 .contactSectionContainer {
     text-align: center;
-    padding-bottom: 2rem;
-    padding-top: 1rem;
-    background-color: rgba(107, 107, 107, 0.224);
-    border-top-right-radius: 5rem;
-    border-top-left-radius: 5rem;
+}
+
+.contactDescription {
+    margin-top: 0.5rem;
 }

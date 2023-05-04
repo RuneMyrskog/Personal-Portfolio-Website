@@ -21,8 +21,8 @@ export default class Home extends React.Component {
                 <Projects/>
                 <Experiences/>
                 <Resume/>
-                <Contact/>
             </div>
+            <div id="bottomSpacer"></div>
         </div>
         );
     }
