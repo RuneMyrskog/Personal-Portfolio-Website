@@ -1,6 +1,6 @@
 body {
-    /* background-color: rgb(245, 245, 245); */
-    background-image: linear-gradient(#180f2f, #82ddbd);
+    background-color: #201f2a;
+    /* background-image: linear-gradient(#180f2f, #82ddbd); */
     margin: 0;
 }
 
@@ -20,6 +20,8 @@ html {
   margin-top: 30px;
   margin-bottom: 20px;
   text-align: left;
+  overflow: auto;
+  
 }
 
 .description {

@@ -5,6 +5,10 @@
   overflow-y: scroll;
   scroll-behavior: smooth;
 }
+#topContainer {
+  margin: auto;
+  height: 100vh;
+}
 #bottomSpacer {
   height: 2.5rem;
 }
@@ -14,22 +18,92 @@
   }
 }
 
-#topContainer {
-  margin-top: 30vh;
-  margin-left: 5vh;
-  margin-right: 5vw;
-  height: 65vh;
+#squiggle {
+  position: fixed;
+  top: 5rem;
+  left: 0;
+  height: auto;
+  width: 110%;
+  z-index: -10;
+  stroke-dasharray: 10000;
+  stroke-dashoffset: 10000;
+  animation: dash 3s linear forwards;
 }
 
-#downArrowContainer {
-  width:100%;
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+
+#nameAndTitleContainer {
+  margin-top: 25vh;
+  margin-left: 8vw;
+  display: flex;
+}
+
+.downArrowContainer {
+  width: 100%;
+  margin-top: 25vh;
   text-align: center;
 }
 
-#downarrow {
-  fill: white;
-  width: 3rem;
-  margin-top:25vh;
+
+#profilePicContainer {
+  padding-left: 15vw;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  #nameAndTitleContainer {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    margin-top: 15vh;
+    margin-left: 0vw;
+  }
+
+  #profilePicContainer {
+    padding-left: 0px;
+    text-align: center;
+  }
+    
+  .downArrowContainer {
+    width: 100%;
+    margin-top: 5vh;
+    text-align: center;
+  }
+}
+
+
+
+#profilePic {
+  background-image: url(../images/profilepic.jpg);
+  /* background-color: black; */
+  background-position: 50% 30%;
+  background-size: 30rem;
+  animation: warp 8s ease-in-out infinite;
+  animation-iteration-count: infinite;
+  display: inline-block;
+  width: 20rem;
+  height: 20rem;
+  max-width: 60vw;
+  max-height: 60vw;
+  border: 3px solid white;
+}
+
+@keyframes warp {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
 }
 
 @media (max-width: 400px) {
@@ -43,30 +117,9 @@
 #downarrow:hover {
   cursor: pointer;
 }
-
-#titleSectionContainer {
-  display: block;
-}
-
 #nameTitle {
-  font-size: 5rem;
-  animation: fadein1 ease-in 2.5s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
-
-
-@keyframes fadein1 {
-  0% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 0
-  }
-  100% {
-    opacity: 1;
-  }
+  padding-top: 3rem;
+  font-size: 6rem;
 }
 
 #nameSubtitle {
@@ -76,62 +129,43 @@
   animation-fill-mode: forwards;
 }
 
-@keyframes fadein2 {
-  0% {
-    opacity: 0;
+@media (max-width:800px) {
+  #nameTitle {
+    font-size: 4.5rem;
   }
 
-  50% {
-    opacity: 0
-  }
-
-  100% {
-    opacity: 1;
+  #nameSubtitle {
+    font-size: 2rem;
   }
 }
 
-@media (max-width:400px) {
+@media (max-width:575px) {
   #nameTitle {
     font-size: 3.5rem;
   }
 
   #nameSubtitle {
-    font-size: 1.4rem;
+    font-size: 1.75rem;
   }
 }
+@media (max-width:450px) {
+  #nameTitle {
+    font-size: 2.5rem;
+  }
+
+  #nameSubtitle {
+    font-size: 1.25rem;
+  }
+}
+
+
 
 #rightContainer {
-  padding-left: 5vw;
-  padding-right: 5vw;
-  width: 80%;
+  margin-left: 8vw;
+  margin-right: 8vw;
+  width: 84vw;
   flex: 1 1 auto;
-  margin-right: 5vw;
-  margin-left: 5vw;
   /* background-color: white; */
-}
-
-
-
-@media (min-width:1000px){
-
-  #topContainer {
-    margin-top: 35vh;
-    padding-left: 5vmin;
-    padding-right: 5vmin;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    height: 65vh;
-  }
-
-  #rightContainer {
-    padding-left: 5vh;
-    padding-right: 5vh;
-    width: 80%;
-    flex: 1 1 auto;
-    margin-right: 5vw;
-    margin-left: 5vw;
-    /* background-color: white; */
-  }
 }
 
 

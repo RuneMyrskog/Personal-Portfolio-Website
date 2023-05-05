@@ -40,12 +40,49 @@ export class LinkedinLink extends React.Component {
 export class DownArrow extends React.Component {
     render() {
         return (
-            <a href="#projects">
-                <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="downarrow" className="bounce">
-                    <path d="M11 21.883l-6.235-7.527-.765.644 7.521 9 7.479-9-.764-.645-6.236 7.529v-21.884h-1v21.883z" />
-                </svg>
+            <a href={this.props.href}>
+                <div className="bounce">
+                    <Arrow direction="down"/>
+                </div>
             </a>
         );
+    }
+}
+
+export class Arrow extends React.Component {
+    
+    rightArrow = () =>
+        (<svg  onClick={this.props.onClick} xmlns="http://www.w3.org/2000/svg" className="arrow" viewBox="0 0 16 16">
+            <path d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+        </svg>)
+    
+    leftArrow = () =>
+    (<svg  onClick={this.props.onClick} xmlns="http://www.w3.org/2000/svg" class="arrow" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+        </svg>)
+    
+    downArrow= () =>
+    (<svg  onClick={this.props.onClick}  xmlns="http://www.w3.org/2000/svg"  class="arrow" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z" />
+        </svg>)
+    
+    upArrow = () =>
+    (<svg  onClick={this.props.onClick}  xmlns="http://www.w3.org/2000/svg"  class="arrow" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+        </svg>)
+    
+    render() {
+        switch(this.props.direction) {
+            case "left":
+                return this.leftArrow()
+            case "right":
+                return this.rightArrow()
+            case "down":
+                return this.downArrow()
+            case "up":
+                return this.upArrow()
+
+        }
     }
 }
 

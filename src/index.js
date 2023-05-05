@@ -12,6 +12,8 @@ import Skills from './Skills';
 import './index.css'
 
 
+
+
 class App extends React.Component {
   render(){
     return (
@@ -30,9 +32,25 @@ class App extends React.Component {
     }
 }
 
-window.onload = () => {
-  ReactDOM.render(<App />,document.getElementById('root'));
+function checkChangeOpaque() {
+
+
 }
 
+var home, squiggle;
+window.onload = () => {
+  ReactDOM.render(<App />,document.getElementById('root'));
+  squiggle = document.getElementById("squiggle");
+  home = document.getElementById("homeContainer");
+  home.onscroll = () => {
 
-
+    if (home.scrollTop > window.innerHeight) {
+      squiggle.style.opacity = 0.5;
+    
+    } else if (home.scrollTop < window.innerHeight) {
+      squiggle.style.opacity = 1;
+    
+    }
+  }
+ 
+}

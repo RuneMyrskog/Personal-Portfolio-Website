@@ -1,0 +1,50 @@
+.wheelContainer {
+    display: flex;
+    /* height:80vh; */
+    max-width: 70vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wheelButtonContainer {
+    
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+@media (max-width: 850px) {
+    .wheelContainer {
+        display: block;
+    }
+
+    .wheelButtonContainer {
+        height: fit-content;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+    
+}
+
+.wheelCenteringContainer {
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.wheelPrevButton:hover, .wheelNextButton:hover {
+    cursor: pointer;
+}
+
+
+
+.wheelButton {
+    max-width: 2vw;
+}

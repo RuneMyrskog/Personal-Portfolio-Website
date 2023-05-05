@@ -13,6 +13,27 @@
     }
 }
 
+.arrow {
+    width: 5rem;
+    max-width: 10vw;
+    fill: white;
+}
+.arrow:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.arrow.left {
+    transform: rotate(180deg);
+}
+.arrow.down {
+    transform: rotate(90deg);
+}
+.arrow.up {
+    transform: rotate(270deg);
+}
+
+
 .icon:hover {
     transform: scale(1.2);
     fill: white;
@@ -28,8 +49,6 @@
     transform: scale(1.2);
     fill: white;
 }
-
-
 
 .mediaLink {
     text-align-last: center;

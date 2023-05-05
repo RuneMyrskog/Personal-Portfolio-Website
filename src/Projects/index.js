@@ -81,11 +81,13 @@ class Project extends React.Component {
     }
 
     render() {
-        const className = this.props.flipx ? "projectExampleContainer right" : "projectExampleContainer left"
+        const className = this.props.flipx ? "right" : "left"
         return (
-            <div className={className}>
-                {this.props.flipx ? this.descriptionSection() : this.imageSection()}
-                {this.props.flipx ? this.imageSection() : this.descriptionSection()}
+            <div className={"projectAlignContainer " + className}>
+                <div className={"projectExampleContainer " + className}>
+                    {this.props.flipx ? this.descriptionSection() : this.imageSection()}
+                    {this.props.flipx ? this.imageSection() : this.descriptionSection()}
+                </div>
             </div>
         );
     }
