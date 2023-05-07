@@ -1,6 +1,6 @@
 import React from 'react';
 import Wheel from "../Components/Wheel"
-import { DownArrow } from '../Components/Media';
+import SectionTitle from '../Components/SectionTitle';
 import './styles.css';
 
 export default class Experiences extends React.Component {
@@ -8,7 +8,7 @@ export default class Experiences extends React.Component {
         return (
             <div id="experience">
                 <div className="sectionContainer">
-                    <span className="sectionTitle">Experience</span>
+                    <SectionTitle title="Experience"/>
                     <Wheel>
                         <Experience title="IBM Canada, Software Developer">
                             <p>Worked in scrum team focusing on engine code for IBM’s Db2 and Data Virtualization products using linux, C++, Perl, SQL, Jenkins, shell scripting</p>
@@ -46,8 +46,8 @@ class Experience extends React.Component {
         return (
             <div className="experienceDescriptionContainer">
                 <ul>
-                {this.props.children.map((note) => 
-                    <li>{note}</li>
+                {this.props.children.map((note, index) => 
+                    <li key={index}>{note}</li>
                 )}
                 </ul>
             </div>

@@ -4,7 +4,7 @@ import TreeJSPic from "../images/TreeJSPic.png";
 import pathFindPic from "../images/pathFindPic.png";
 import RejuvenateHomePic from "../images/RejuvenateHomePic.png";
 import spaceAdventurePic from "../images/spaceAdventurePic.jpg";
-import spidrPic from "../images/spidrPic.png"
+import SectionTitle from '../Components/SectionTitle';
 
 export default class Projects extends React.Component {
 
@@ -12,9 +12,9 @@ export default class Projects extends React.Component {
         return (
             <div id="projects">
                 <div className="sectionContainer">
-                    <span className="sectionTitle">Projects</span>
+                    <SectionTitle title="Projects"/>
 
-                    <Project flipx={false} image={TreeJSPic} alt="TreeJS" href="https://treejslib.herokuapp.com">
+                    <Project flipx={false} title={"TreeJS"} image={TreeJSPic} alt="TreeJS" href="https://treejslib.herokuapp.com">
                         <p className="projectDescription">
                             TreeJS is a front end Javascript library. It is written to provide a 
                             simple way of displaying customized tree structures in the DOM.
@@ -23,7 +23,7 @@ export default class Projects extends React.Component {
                         </p>
                     </Project>
 
-                    <Project flipx={true} image={pathFindPic} alt="astar visualization" href="https://astarvisualize.herokuapp.com">
+                    <Project flipx={true} title={"AStar Visualized"} image={pathFindPic} alt="astar visualization" href="https://astarvisualize.herokuapp.com">
                         <p className="projectDescription">
                             This project is an implementation and visualiztion of the A-Star path finding 
                             algorithm. This project was written as an application in python and as a 
@@ -32,7 +32,7 @@ export default class Projects extends React.Component {
                         </p>
                     </Project>
 
-                    <Project flipx={false} image={RejuvenateHomePic} alt="Rejuvenate website" href="https://projectrejuvenate.herokuapp.com">
+                    <Project flipx={false} title={"Rejuvenate"} image={RejuvenateHomePic} alt="Rejuvenate website" href="https://projectrejuvenate.herokuapp.com">
                         <p className="projectDescription">
                             Rejuvenate is a social media website targeted towards health enthusiasts. It was created
                             to be used as a forum for sharing advice and motivation. This is a full stack application
@@ -41,7 +41,7 @@ export default class Projects extends React.Component {
                         </p>
                     </Project>
 
-                    <Project flipx={true} image={spaceAdventurePic} alt="space adventure" href="https://github.com/RuneMyrskog/SpaceAdventure-A-2D-Android-Game">
+                    <Project flipx={true} title={"Space Adventure"} image={spaceAdventurePic} alt="space adventure" href="https://github.com/RuneMyrskog/SpaceAdventure-A-2D-Android-Game">
                         <p className="projectDescription">
                             Space Adventure is an android game developed in Java by myself and 3 other contributors
                             listed in the <a href="https://github.com/RuneMyrskog/SpaceAdventure-A-2D-Android-Game">github repository</a>. The game consists of several 2d minigames played as 
@@ -75,6 +75,9 @@ class Project extends React.Component {
     descriptionSection() {
         return (
         <div className="projectDescriptionContainer">
+            <div className="projectTitleContainer">
+                <span className="projectTitle">{this.props.title}</span>
+            </div>
             {this.props.children}
         </div>
         );

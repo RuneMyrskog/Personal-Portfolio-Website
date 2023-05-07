@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import { GithubLink, EmailLink, LinkedinLink, } from '../Media';
 import './styles.css'
 
@@ -16,7 +15,7 @@ export default class Navbar extends React.Component {
             <ul id="navLinkList">
               <NavLink to="/#projects" name="Projects"/>
               <NavLink to="/#experience" name="Experience" />
-              <NavLink to="/#resume" name="Resume"/>
+              <NavLink to="/#contact" name="Contact"/>
             
             
             <ul id="externalsList">

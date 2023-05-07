@@ -2,74 +2,84 @@
     padding-top: 1rem;
 }
 
+.projectTitleContainer {
+    padding-bottom: 2rem;
+}
+.projectTitle {
+    font-size: 3vw;
+    /* background: -webkit-linear-gradient(45deg,#01fe9c, #fb04c5); */
+    background: -webkit-linear-gradient( #517fec, rgb(206, 227, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
+.projectDescription {
+    margin: auto;
+    font-size: 1.5vw;
+    line-height: 2vw;
+}
 
 .projectExampleContainer a {
     text-decoration: underline;
 }
 
 .projectExampleContainer {
-    background-color: #201f2a92;
     /* background-color: darkblue; */
     padding: 1rem;
-    border-radius: 1rem;
+    /* border-radius: 1rem; */
     margin-top: 2rem;
     display: flex;
-    width: 70vw;
       
 }
-
-.projectAlignContainer.right {
+.projectAlignContainer{
+    border-top: 1px solid hsla(0, 0%, 100%, 0.35);
+    overflow: auto;
     width: 100%;
-    text-align: right;
+    text-align: center;
 }
 
-.projectAlignContainer.right .projectImageContainer {
-    text-align: right;
+.projectImageContainer {
+    text-align: center;
 }
-
-.projectAlignContainer.left .projectImageContainer {
-    text-align: left;
-}
-
-.projectAlignContainer.left {
-    width: 100%;
-}
-
-.projectExampleContainer.right {
-    float:right;
-    text-align: right;
-}
-
-.projectExampleContainer.left {
-    float:left;
-    text-align: left;
-}
-
 
 
 .projectDescriptionContainer {
-    width: 100%;
     margin: auto;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    text-align: center;
+}
+
+@media (min-width: 1251px) {
+    .projectExampleContainer.left {
+        float: left;
+    }
+    .projectExampleContainer.right {
+        float: right;
+    }
+
 }
 
 @media (max-width:1250px) {
-
+    .projectDescription {
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+    .projectTitle {
+        font-size: 6vw;
+    }
     .projectExampleContainer {
         margin-top: 2vmin;
-        text-align: center;
+        float: none;
     }
 
     .projectDescriptionContainer {
-        width: 100%;
+        width: auto;
         margin: auto;
-        /* text-align: center; */
     }
 
     .projectExampleContainer.right {
-        display: flex;
         flex-direction: column-reverse;
     }
     .projectExampleContainer.left {
@@ -83,10 +93,10 @@
 
     width: 45rem;
     height: 30rem;
-    max-width: 40vw;
-    max-height: 30vw;
+    max-width: 60vw;
+    max-height: 40vw;
     border: 1px solid black;
-    border-radius: 1rem;
+    /* border-radius: 1rem; */
     transition: all .1s ease-in-out;
 }
 
@@ -97,8 +107,3 @@
 
 
 
-.projectDescription {
-    margin: auto;
-    font-size: 3vh;
-    line-height: 4.5vh;
-}   

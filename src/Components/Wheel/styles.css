@@ -1,9 +1,14 @@
 .wheelContainer {
     display: flex;
-    /* height:80vh; */
     max-width: 70vw;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+}
+
+.wheelChildContainer {
+    height: 60vh;
+    display: flex;
     align-items: center;
 }
 

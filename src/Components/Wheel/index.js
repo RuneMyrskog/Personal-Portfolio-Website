@@ -5,10 +5,6 @@ import './styles.css';
 
 
 class WheelChild extends React.Component {
-    constructor(props){
-        super(props);
-       
-    }
 
     onComponentDidMount() {
        
@@ -43,7 +39,7 @@ export default class Wheel extends React.Component {
     showPrevious() {
         const currIndex = this.state.index
         const lastIndex = this.state.wheelChildren.length - 1
-        const prevIndex = currIndex == 0 ? lastIndex : currIndex - 1
+        const prevIndex = currIndex === 0 ? lastIndex : currIndex - 1
         this.setState({ index: prevIndex })
         
     }
@@ -51,7 +47,7 @@ export default class Wheel extends React.Component {
     showNext() {
         const currIndex = this.state.index
         const lastIndex = this.state.wheelChildren.length - 1
-        const nextIndex = currIndex == lastIndex ? 0 : currIndex + 1
+        const nextIndex = currIndex === lastIndex ? 0 : currIndex + 1
         this.setState({ index: nextIndex })
         
     }
@@ -66,7 +62,8 @@ export default class Wheel extends React.Component {
                         <Arrow className="wheelButton" direction="left" onClick={() => { this.showPrevious() }}/>
                     </div>
                     
-                    {this.state.wheelChildren[this.state.index]}
+                        {this.state.wheelChildren[this.state.index]}
+                   
 
                     <div className="wheelButtonContainer">
                         <Arrow className="wheelButton" direction="right" onClick={() => { this.showNext() }} />

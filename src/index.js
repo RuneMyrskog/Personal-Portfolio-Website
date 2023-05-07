@@ -32,11 +32,6 @@ class App extends React.Component {
     }
 }
 
-function checkChangeOpaque() {
-
-
-}
-
 var home, squiggle;
 window.onload = () => {
   ReactDOM.render(<App />,document.getElementById('root'));
