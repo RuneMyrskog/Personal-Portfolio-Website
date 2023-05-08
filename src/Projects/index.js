@@ -5,6 +5,7 @@ import pathFindPic from "../images/pathFindPic.png";
 import RejuvenateHomePic from "../images/RejuvenateHomePic.png";
 import spaceAdventurePic from "../images/spaceAdventurePic.jpg";
 import SectionTitle from '../Components/SectionTitle';
+import { GithubLink } from '../Components/Media';
 
 export default class Projects extends React.Component {
 
@@ -18,6 +19,10 @@ export default class Projects extends React.Component {
                         <p className="projectDescription">
                             Front end javascript library to render custom tree structures in the DOM. 
                         </p>
+                        <br /> 
+                        <span className="projectTechnologies">Javascript HTML CSS</span>
+                        <br />
+                        <GithubLink href="https://github.com/RuneMyrskog/TreeJS"/>
                     </Project>
 
                     <Project flipx={true} title={"AStar Visualized"} image={pathFindPic} alt="astar visualization" href="https://astarvisualize.herokuapp.com">
@@ -26,6 +31,10 @@ export default class Projects extends React.Component {
                             algorithm. Written as a python application and as a 
                             static webpage.
                         </p>
+                        <br/> 
+                        <span className="projectTechnologies">Python Javascript</span>
+                        <br />
+                        <GithubLink href="https://github.com/RuneMyrskog/PathFindingVisualizer---static-web-page-version"/>
                     </Project>
 
                     <Project flipx={false} title={"Rejuvenate"} image={RejuvenateHomePic} alt="Rejuvenate website" href="https://projectrejuvenate.herokuapp.com">
@@ -33,19 +42,21 @@ export default class Projects extends React.Component {
                             Full stack social media website targeted towards health enthusiasts, implementing full REST api and all CRUD operations.
                             
                         </p>
+                        <br/>
+                        <span className="projectTechnologies">MongoDB React</span>
+                        <br />
+                        <GithubLink href="https://github.com/RuneMyrskog/Rejuvenate-Website"/>
                     </Project>
 
                     <Project flipx={true} title={"Space Adventure"} image={spaceAdventurePic} alt="space adventure" href="https://github.com/RuneMyrskog/SpaceAdventure-A-2D-Android-Game">
                         <p className="projectDescription">
                             2D level-based android game developed in Java by myself and 3 other contributors
                         </p>
+                        <br/>
+                        <span className="projectTechnologies">Java</span>
+                        <br/>
+                        <GithubLink href="https://github.com/RuneMyrskog/SpaceAdventure-A-2D-Android-Game"/>
                     </Project>
-                    {/* <Project flipx={false} image={spidrPic} alt="spidr" href="https://github.com/RuneMyrskog/SpaceAdventure-A-2D-Android-Game">
-                        <p className="projectDescription">
-                            Spidr is a cross-platform social media app I helped to develop during its inception alongside two other software developers. The app was written using Dart/Flutter. 
-                            I created the search engine using a combination of Algolia and firebase cloud functions, and also programmed animations used within the app.
-                        </p>
-                    </Project> */}
 
                 </div>
             </div>
