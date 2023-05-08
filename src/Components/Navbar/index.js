@@ -18,11 +18,11 @@ export default class Navbar extends React.Component {
               <NavLink to="/#contact" name="Contact"/>
             
             
-            <ul id="externalsList">
-              <GithubLink />
-              <EmailLink />
-              <LinkedinLink />
-            </ul>
+            {/* <ul id="externalsList">
+                <li><GithubLink /></li>
+                <li><EmailLink /></li>
+                <li><LinkedinLink /></li>
+            </ul> */}
 
             </ul>
 

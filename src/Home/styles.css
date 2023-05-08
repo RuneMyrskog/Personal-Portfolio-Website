@@ -1,17 +1,24 @@
-#homeContainer {
-  position: fixed;
-  top: 2.5rem;
-  height: 95vh;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
+body {
+  width: 100vw;  
+  display: flex;
+  flex-direction: column;
 }
+
 #topContainer {
   margin: auto;
   height: 100vh;
 }
+
+#rightContainer {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #bottomSpacer {
   height: 2.5rem;
 }
+
 @media (max-width: 400px) {
   #bottomSpacer {
     height: 10rem;
@@ -160,13 +167,7 @@
 
 
 
-#rightContainer {
-  margin-left: 8vw;
-  margin-right: 8vw;
-  width: 84vw;
-  flex: 1 1 auto;
-  /* background-color: white; */
-}
+
 
 
 

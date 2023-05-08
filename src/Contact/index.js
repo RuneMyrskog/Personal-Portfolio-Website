@@ -34,7 +34,10 @@ export default class Contact extends React.Component {
       },
       body: JSON.stringify(data),
     }).then((res) => {
+      console.log("ASPIJDOF");
+      console.log(res.status);
       if (res.status == 200) {
+        console.log("ASPIJDOF");
         this.setState({status: "success"});
       } 
       else 
@@ -42,6 +45,8 @@ export default class Contact extends React.Component {
         this.setState({ status: "error" });
       }
     });
+
+    this.setState({status: "success"})
 
   }
 
@@ -74,7 +79,6 @@ export default class Contact extends React.Component {
       console.log("error");
       return false;
     }
-    console.log(name)
    
     if (name.value == ""){
       name.className = "error-border"
@@ -145,12 +149,12 @@ export default class Contact extends React.Component {
               </textarea>
               <div>
                 <input onClick={this.handleSubmit.bind(this)} id="submitButton" className="button" type="submit" value="Send Message"/>
-                <span id="form-info-span" className={this.state.status}></span>
+                {this.infoSpan()}
               </div>
             </form>
             <div id="contactRightContainer">
                 <div id="contactMessageContainer">
-                  <span id="contactMessage">Feel free to reach out! You can contact me through the form or directly email me at <a href="mailto:runemyrskog@gmail.com">runemyrskog@gmail.com</a></span>
+                  <span id="contactMessage">Feel free to reach out! You can contact me through the form or directly <a href="mailto:runemyrskog@gmail.com">email me</a></span>
                 </div>
 
             </div>

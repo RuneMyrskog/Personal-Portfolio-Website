@@ -5,6 +5,7 @@
 .projectTitleContainer {
     padding-bottom: 2rem;
 }
+
 .projectTitle {
     font-size: 3vw;
     /* background: -webkit-linear-gradient(45deg,#01fe9c, #fb04c5); */
@@ -95,7 +96,7 @@
     height: 30rem;
     max-width: 60vw;
     max-height: 40vw;
-    border: 1px solid black;
+    /* border: 1px solid hsla(0, 0%, 100%, 0.35); */
     /* border-radius: 1rem; */
     transition: all .1s ease-in-out;
 }

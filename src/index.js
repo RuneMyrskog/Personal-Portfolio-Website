@@ -1,15 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-
+import { GithubLink, EmailLink, LinkedinLink, } from './Components/Media';
 import Navbar from './Components/Navbar';
-import Contact from './Contact';
 import Home from './Home';
-import Resume from './Resume';
-import Skills from './Skills';
+
 
 
 import './index.css'
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 
 
@@ -19,14 +18,16 @@ class App extends React.Component {
     return (
       <>
         <Navbar />
-        <Router>
-            <Switch>
-              <Route path="/" exact component={Home}/>
-              <Route path="/resume" component={Resume}/>
-              <Route path="/skills" component={Skills}/>
-              <Route path="/contact" component={Contact}/>
-            </Switch>
-        </Router>
+        <Home/>
+        <footer>
+          <div className="footer-container">
+              <h3>Copyright © 2023. All rights are reserved</h3>
+              <div class="footer-socials-container">
+                <GithubLink/>
+                <LinkedinLink/>
+              </div>
+            </div>
+        </footer>
       </>
       );
     }

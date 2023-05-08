@@ -4,7 +4,7 @@ import Projects from "../Projects";
 import Contact from "../Contact";
 // import Resume from '../Resume';
 import Experiences from '../Experience';
-import { DownArrow } from '../Components/Media';
+import { DownArrow, GithubLink, EmailLink, LinkedinLink, } from '../Components/Media';
 
 export default class Home extends React.Component {
     render (){
@@ -55,7 +55,7 @@ class TitleSection extends React.Component {
         return (
             <div id="titleSectionContainer">
                 <h1 id="nameTitle">Rune Myrskog</h1>
-                <h2 id="nameSubtitle">Software Developer</h2>
+                <span id="nameSubtitle">Software Developer <GithubLink /> <LinkedinLink /></span>
             </div>
         );
     }

@@ -3,18 +3,16 @@
 }
 
 #navbar {
-  z-index: 1;
-  padding-top: 0.8rem;
+  z-index: 5;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   position: fixed;
   top: 0px;
   left: 0px;
   right: 0px;
   height: 2rem;
-  /* background-color: #f8f8f8; */
-  background-color: transparent;
-  /* border-bottom: 1px solid #ddd; */
+  background-color: #1f1f2d;
 }
+
 #navLinkList {
   padding-left: 0rem;
   width:100%;
@@ -29,6 +27,11 @@
   display: flex;
   
   list-style: none;
+}
+
+#navbar li {
+  display: flex;
+  align-items: center;
 }
 
 #navbar a {
@@ -61,8 +64,10 @@
 }
 
 #navRightContainer {
+  height: 100%;
   display: flex;
   float: right;
+  /* margin-right: 10%; */
 }
 
 #navRightContainer .icon {
