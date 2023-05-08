@@ -4,7 +4,7 @@ import Projects from "../Projects";
 import Contact from "../Contact";
 // import Resume from '../Resume';
 import Experiences from '../Experience';
-import { DownArrow, GithubLink, EmailLink, LinkedinLink, } from '../Components/Media';
+import {GithubLink, LinkedinLink, } from '../Components/Media';
 
 export default class Home extends React.Component {
     render (){

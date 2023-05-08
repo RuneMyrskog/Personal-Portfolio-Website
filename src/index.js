@@ -8,7 +8,6 @@ import Home from './Home';
 
 
 import './index.css'
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 
 
@@ -24,7 +23,7 @@ class App extends React.Component {
     }
 }
 
-var home, squiggle;
+var squiggle;
 window.onload = () => {
   ReactDOM.render(<App />,document.getElementById('root'));
   ReactDOM.render(<Footer />, document.getElementById('footer'));

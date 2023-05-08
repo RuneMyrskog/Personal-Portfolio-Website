@@ -1,5 +1,4 @@
 import React from 'react';
-import { GithubLink, EmailLink, LinkedinLink, } from '../Media';
 import './styles.css'
 
 export default class Navbar extends React.Component {

@@ -36,7 +36,7 @@ export default class Contact extends React.Component {
     }).then((res) => {
       console.log("ASPIJDOF");
       console.log(res.status);
-      if (res.status == 200) {
+      if (res.status === 200) {
         console.log("ASPIJDOF");
         this.setState({status: "success"});
       } 
@@ -80,16 +80,16 @@ export default class Contact extends React.Component {
       return false;
     }
    
-    if (name.value == ""){
+    if (name.value === ""){
       name.className = "error-border"
       return false;
     }
-    if (email.value == "") {
+    if (email.value === "") {
       email.className = "error-border"
       return false;
     }
 
-    if (message.value == "") {
+    if (message.value === "") {
       message.className = "error-border"
       return false;
     }
