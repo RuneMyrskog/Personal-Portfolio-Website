@@ -95,10 +95,10 @@ body {
 
 
 #profilePic {
-  background-image: url(../images/profilepic.jpg);
+  background-image: url(../images/profilepic.png);
   /* background-color: black; */
-  background-position: 50% 30%;
-  background-size: 30rem;
+  background-position: 50% 50%;
+  background-size: 20rem;
   animation: warp 8s ease-in-out infinite;
   animation-iteration-count: infinite;
   display: inline-block;
