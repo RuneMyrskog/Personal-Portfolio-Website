@@ -12,7 +12,7 @@ This is my personal website which hosts my projects at <a href='https://runemyrs
 » Firebase <br>
 » HTML, CSS, Javascript<br>
 
-<br>
 
-<h2>Screenshots of the Portfolio 🎥</h2>
+<br>
+<img src="https://user-images.githubusercontent.com/48970872/236899405-af483974-3cb3-447c-b822-c44e0799760b.png"/>
 <br>
