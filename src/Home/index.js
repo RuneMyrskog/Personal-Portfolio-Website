@@ -18,9 +18,9 @@ export default class Home extends React.Component {
                             <div id="profilePic"></div>
                         </div>
                     </div>
-                    <div className="downArrowContainer">
+                    {/* <div className="downArrowContainer">
                         <DownArrow href="#projects"/>
-                    </div>
+                    </div> */}
                 </div>
                 
                 <div id="rightContainer">

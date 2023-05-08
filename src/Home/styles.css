@@ -5,14 +5,22 @@ body {
 }
 
 #topContainer {
-  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
 }
 
 #rightContainer {
-  width: 80%;
+  width: 80rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (max-width: 1350px) {
+  #rightContainer {
+    width: 80vw;
+  }
 }
 
 #bottomSpacer {
@@ -46,8 +54,9 @@ body {
 
 
 #nameAndTitleContainer {
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 25vh;
-  margin-left: 8vw;
   display: flex;
 }
 
@@ -59,7 +68,7 @@ body {
 
 
 #profilePicContainer {
-  padding-left: 15vw;
+  padding-left: 10vw;
   text-align: center;
 }
 
@@ -69,7 +78,6 @@ body {
     align-items: center;
     text-align: center;
     margin-top: 15vh;
-    margin-left: 0vw;
   }
 
   #profilePicContainer {
@@ -136,6 +144,15 @@ body {
   animation-fill-mode: forwards;
 }
 
+
+@media (max-width: 1350px) {
+  #nameTitle {
+    font-size: 5rem;
+  }
+  #nameSubtitle {
+    font-size: 2rem;
+  }
+}
 @media (max-width:800px) {
   #nameTitle {
     font-size: 4.5rem;

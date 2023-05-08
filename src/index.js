@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import { GithubLink, EmailLink, LinkedinLink, } from './Components/Media';
+// import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Footer from './Components/Footer';
 import Navbar from './Components/Navbar';
 import Home from './Home';
 
@@ -19,15 +19,6 @@ class App extends React.Component {
       <>
         <Navbar />
         <Home/>
-        <footer>
-          <div className="footer-container">
-              <h3>Copyright © 2023. All rights are reserved</h3>
-              <div class="footer-socials-container">
-                <GithubLink/>
-                <LinkedinLink/>
-              </div>
-            </div>
-        </footer>
       </>
       );
     }
@@ -36,14 +27,14 @@ class App extends React.Component {
 var home, squiggle;
 window.onload = () => {
   ReactDOM.render(<App />,document.getElementById('root'));
-  squiggle = document.getElementById("squiggle");
-  home = document.getElementById("homeContainer");
-  home.onscroll = () => {
+  ReactDOM.render(<Footer />, document.getElementById('footer'));
 
-    if (home.scrollTop > window.innerHeight) {
+  squiggle = document.getElementById("squiggle");
+  window.onscroll = () => {
+    if (window.pageYOffset > window.innerHeight) {
       squiggle.style.opacity = 0.5;
     
-    } else if (home.scrollTop < window.innerHeight) {
+    } else if (window.pageYOffset < window.innerHeight) {
       squiggle.style.opacity = 1;
     
     }

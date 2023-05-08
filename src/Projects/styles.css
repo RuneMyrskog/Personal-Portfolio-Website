@@ -17,8 +17,8 @@
 
 .projectDescription {
     margin: auto;
-    font-size: 1.5vw;
-    line-height: 2vw;
+    font-size: 1.5rem;
+    line-height:1.7rem;
 }
 
 .projectExampleContainer a {
@@ -26,11 +26,14 @@
 }
 
 .projectExampleContainer {
-    /* background-color: darkblue; */
+    /* width: 90%; */
     padding: 1rem;
-    /* border-radius: 1rem; */
     margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 5rem;
     display: flex;
+    flex-direction: row;
       
 }
 .projectAlignContainer{
@@ -38,6 +41,7 @@
     overflow: auto;
     width: 100%;
     text-align: center;
+    display: flex;
 }
 
 .projectImageContainer {
@@ -46,13 +50,15 @@
 
 
 .projectDescriptionContainer {
-    margin: auto;
-    padding-left: 8vw;
-    padding-right: 8vw;
+    width: 20rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 
-@media (min-width: 1251px) {
+/* @media (min-width: 1251px) {
     .projectExampleContainer.left {
         float: left;
     }
@@ -60,13 +66,13 @@
         float: right;
     }
 
-}
+} */
 
 @media (max-width:1250px) {
-    .projectDescription {
+    /* .projectDescription {
         font-size: 4vw;
         line-height: 5vw;
-    }
+    } */
     .projectTitle {
         font-size: 6vw;
     }
@@ -76,7 +82,6 @@
     }
 
     .projectDescriptionContainer {
-        width: auto;
         margin: auto;
     }
 
@@ -92,12 +97,14 @@
 
 .projectImage {
 
+    /* width: 45rem;
+    height: 30rem; */
     width: 45rem;
     height: 30rem;
-    max-width: 60vw;
-    max-height: 40vw;
+    max-width: 45vw;
+    max-height: 30vw;
     /* border: 1px solid hsla(0, 0%, 100%, 0.35); */
-    /* border-radius: 1rem; */
+    border-radius: 0.5rem;
     transition: all .1s ease-in-out;
 }
 
