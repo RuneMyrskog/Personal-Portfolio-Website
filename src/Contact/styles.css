@@ -36,7 +36,7 @@ form {
 #contactContainer {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 #contactRightContainer {
     width: 40%;
@@ -47,7 +47,7 @@ form {
 #contactForm {
     margin-left: 2px;
     margin-right: 2px;
-    width: 40%;
+    width: 50%;
 }
 
 @media (max-width: 1250px) {
