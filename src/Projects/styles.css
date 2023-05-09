@@ -72,8 +72,8 @@
     
         width: 45vw;
         height: 30vw;
-        min-width: 20rem;
-        min-height: 13rem;
+        min-width: 15rem;
+        min-height: 10rem;
         /* border: 1px solid hsla(0, 0%, 100%, 0.35); */
         border-radius: 0.5rem;
         transition: all .1s ease-in-out;
