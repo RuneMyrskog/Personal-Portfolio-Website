@@ -10,7 +10,9 @@
   left: 0px;
   right: 0px;
   height: 2rem;
-  background-color: #1f1f2d;
+  background-color: #252538;
+  display: flex;
+  justify-content: center;
 }
 
 #navLinkList {
@@ -66,8 +68,9 @@
 #navRightContainer {
   height: 100%;
   display: flex;
-  float: right;
-  /* margin-right: 10%; */
+  flex-basis: 90rem;
+  /* float: right; */
+
 }
 
 @media (max-width: 900px) {
