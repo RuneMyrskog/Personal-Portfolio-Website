@@ -37,6 +37,7 @@
     margin-right: auto;
     justify-content: space-around;
     display: flex;
+    /* flex-wrap: wrap; */
     flex-direction: row;
       
 }
@@ -54,9 +55,8 @@
 
 
 .projectDescriptionContainer {
-    width: 20rem;
-    margin-top: auto;
-    margin-bottom: auto;
+    width: 15rem;
+    margin: auto;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -65,19 +65,15 @@
 .projectImage {
     width: 35rem;
     height: 25rem;
+    min-width: 15rem;
+    min-height: 10rem;
     border-radius: 0.5rem;
     transition: all .1s ease-in-out;
 }
 @media (max-width:1250px) {
     .projectImage {
-    
-        width: 45vw;
-        height: 30vw;
-        min-width: 15rem;
-        min-height: 10rem;
-        /* border: 1px solid hsla(0, 0%, 100%, 0.35); */
-        border-radius: 0.5rem;
-        transition: all .1s ease-in-out;
+      width: 25rem;
+      height: 18rem;  
     }
 
     .projectTitle {
@@ -92,20 +88,24 @@
         margin: auto;
         width: 15rem;
     }
-    .projectDescription {
-        font-size: 1.2rem;
+
+}
+
+@media (max-width: 975px){
+    .projectImage {
+        width: 60vw;
+        height: 40vw;
     }
 
     .projectExampleContainer.right {
         flex-direction: column-reverse;
     }
+
+
     .projectExampleContainer.left {
         flex-direction: column;
     }
-
 }
-
-
 
 
 .projectImage:hover {
