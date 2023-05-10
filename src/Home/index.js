@@ -22,13 +22,16 @@ export default class Home extends React.Component {
                         <DownArrow href="#projects"/>
                     </div> */}
                 </div>
-                
-                <div id="rightContainer">
+
+                <div className="container-column-center">
+                    <div id="rightContainer">
+                        
+                        <Projects/>
+                        <Experiences />
+                        <Contact/>
                     
-                    <Projects/>
-                    <Experiences />
-                    <Contact/>
-                    {/* <Resume/> */}
+
+                    </div>
                 </div>
                 <div id="bottomSpacer"></div>
             </div>

@@ -31,8 +31,7 @@
 
 .projectExampleContainer {
     width: 100%;
-    padding: 1rem;
-    margin-top: 2rem;
+    padding: 2rem;
     justify-content: space-around;
     display: flex;
     flex-direction: row;
@@ -64,7 +63,7 @@
     height: 25rem;
     min-width: 15rem;
     min-height: 10rem;
-    border-radius: 0.25rem;
+    /* border-radius: 0.25rem; */
     transition: all .1s ease-in-out;
 }
 @media (max-width:1250px) {
@@ -89,8 +88,14 @@
 }
 
 @media (max-width: 975px){
+
+    .projectExampleContainer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .projectImage {
-        width: 70vw;
+        width: 80vw;
         height: 50vw;
     }
 

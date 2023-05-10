@@ -13,8 +13,6 @@ body {
 
 #rightContainer {
   width: 80rem;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 @media (max-width: 1350px) {
