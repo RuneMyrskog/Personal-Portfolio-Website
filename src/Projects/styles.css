@@ -30,14 +30,11 @@
 }
 
 .projectExampleContainer {
-    width: 90%;
+    width: 100%;
     padding: 1rem;
     margin-top: 2rem;
-    margin-left: auto;
-    margin-right: auto;
     justify-content: space-around;
     display: flex;
-    /* flex-wrap: wrap; */
     flex-direction: row;
       
 }
@@ -67,7 +64,7 @@
     height: 25rem;
     min-width: 15rem;
     min-height: 10rem;
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
     transition: all .1s ease-in-out;
 }
 @media (max-width:1250px) {
@@ -93,8 +90,8 @@
 
 @media (max-width: 975px){
     .projectImage {
-        width: 60vw;
-        height: 40vw;
+        width: 70vw;
+        height: 50vw;
     }
 
     .projectExampleContainer.right {
