@@ -8,8 +8,26 @@
   transition: all .2s ease-in-out;
 }
 
-::-webkit-scrollbar {
+form ::-webkit-scrollbar {
   display: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8e8e8e;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 40px;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: white;
 }
 
 :root {
@@ -44,8 +62,3 @@ body {
     width: 80vw;
   }
 }
-/* .container-column-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */

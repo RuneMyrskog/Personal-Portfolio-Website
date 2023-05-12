@@ -7,6 +7,7 @@ body {
   overflow: auto;
   width: 100%;
   display: flex;
+  overflow-x: clip;
   flex-direction: column;
   min-height: 100vh;
   max-height: 150rem;
@@ -18,7 +19,7 @@ body {
   top: 5rem;
   left: 0;
   height: auto;
-  width: 110%;
+  width: 100%;
   z-index: -10;
   stroke-dasharray: 10000;
   stroke-dashoffset: 10000;
