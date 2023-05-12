@@ -1,0 +1,23 @@
+footer {
+    padding: 3rem 0;
+    background-color: rgb(16, 16, 20);
+
+}
+
+footer .section {
+    padding: 0;
+}
+
+#footerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 500px) {
+    #footerContainer{
+        font-size: 0.65rem;
+    }
+    
+}

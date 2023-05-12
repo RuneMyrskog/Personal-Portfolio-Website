@@ -1,6 +1,43 @@
+#about {
+    background: var(--lighter-blue);
+}
+
 #aboutContainer {
-    margin-top: 50px;
-    text-align: center;
+    
+}
+
+#aboutInnerContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 75rem;
+}
+
+#aboutMeTextContainer {
+    width: 30rem;
+}
+
+.mediumImage {
+    width: 35rem;
+    max-width: 80vw;
+}
+
+@media (max-width: 1320px) {
+    #aboutInnerContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    #aboutMeImage {
+        width: 45rem;
+    }
+
+    #aboutMeTextContainer {
+        width: 100%;
+        max-width: 45rem;
+    }
 }
 
 
@@ -9,8 +46,25 @@
     margin: auto;
     margin-top: 100px;
     max-width: 1000px;
-    
     font-size: 30px;
     padding: 20px;
     border: 10px solid white;
+}
+
+
+
+
+
+#aboutMeTextTitle {
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+}
+#aboutMeTextTitleContainer {
+    margin-bottom: 2rem;
+}
+
+#aboutMeText {
+    font-size: 1.5rem;
 }

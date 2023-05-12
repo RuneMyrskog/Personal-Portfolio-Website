@@ -1,25 +1,6 @@
-#emailLink {
-    color: blue;
-}
-
 #contact {
     width: 100%;
-}
-
-.contactSectionTitle {
-    font-size: 1.5rem;
-}
-#contactBackground {
-    text-align: center;
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    width: fit-content;
-    background-color: rgba(107, 107, 107, 0.224);
-    border-radius: 5rem;
-    display: inline-block;
-}
-
-.contactSectionContainer {
-    text-align: center;
+    background-color: var(--lighter-blue);
 }
 
 .contactDescription {
@@ -30,52 +11,74 @@ form {
     color: black;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
-    font-size: 1.25rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
 }
 
-#contactContainer {
-    width: 100%;
+.container-horizontal-spaced {
     display: flex;
     justify-content: space-between;
 }
+
 #contactRightContainer {
-    width: 40%;
-    padding-left: 5rem;
     display: flex;
     align-items: center;
-}
-#contactForm {
-    margin-left: 2px;
-    margin-right: 2px;
-    width: 50%;
+    justify-content: center;
+    font-size: 1.25rem;
 }
 
-@media (max-width: 1250px) {
-    #contactContainer {
+#contactRightContainer div {
+    width: 60%;
+    text-align: center;
+    
+}
+
+#contactForm {
+    width: 50%;
+    min-width: 25rem;
+}
+
+@media (max-width: 900px) {
+    #contactForm {
+        min-width: initial;
+    }
+
+    .container-horizontal-spaced{
         flex-direction: column-reverse;
     }
     #contactRightContainer {
         padding-left: 0px;
-        width: 90%;
+        width: 100%;
+        font-size: 1rem;
     }
     #contactForm {
-        width: 90%;
+        width: 100%;
+    }
+    #contactRightContainer div {
+        width: 100%;
     }
 }
 
-#contactMessage {
-    font-size: 2rem;
-}
+
 form div {
     margin-top: 1.5rem;
     display: flex;
 }
 
+#submit-info-span-container {
+    display: flex;
+    flex-wrap:wrap;
+}
 #form-info-span {
+    font-size: 0.8rem;
     margin-left: auto;
-    margin-right: 8%;
     font-weight: lighter;
 }
+
+#form-info-span.loading {
+
+}
+
 
 #form-info-span.success {
     color:aquamarine;
@@ -97,9 +100,9 @@ textarea {
     font-size: 1.25rem;
     margin-top: 0.25rem;
     margin-right: 0px;
-    width: 90%;
+    width: 100%;
     padding: .75rem 0rem 0.75rem 1rem;
-    background-color: #2a2a3e;
+    background-color: var(--contact-form-input-color);
     resize: none;
     transition-duration: 0s;
     overflow: scroll;
@@ -107,7 +110,7 @@ textarea {
 
 input.default-border,
 textarea.default-border {
-    border: 2px solid #2a2a3e;
+    border: 2px solid var(--contact-form-input-color);
 }
 
 input.error-border,
@@ -136,7 +139,7 @@ input, label {
     letter-spacing: 0.1rem;
     color: black;
     font-family: "Poppins", sans-serif;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: bold;
     background-color: #517fec;
     border: 2px solid #517fec;

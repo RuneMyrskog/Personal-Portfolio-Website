@@ -4,14 +4,16 @@ import Projects from "../Projects";
 import Contact from "../Contact";
 // import Resume from '../Resume';
 import Experiences from '../Experience';
+import About from '../About';
 import {GithubLink, LinkedinLink, } from '../Components/Media';
 
 export default class Home extends React.Component {
     render (){
         return (
             <div id="homeContainer">
-                <Squiggle />
+                {/* <Squiggle /> */}
                 <div id="topContainer">
+                    <Squiggle />
                     <div id="nameAndTitleContainer">
                         <TitleSection />
                         <div id="profilePicContainer">
@@ -23,17 +25,10 @@ export default class Home extends React.Component {
                     </div> */}
                 </div>
 
-                <div className="container-column-center">
-                    <div id="rightContainer">
-                        
-                        <Projects/>
-                        <Experiences />
-                        <Contact/>
-                    
+                <About/>
+                <Projects/>
+                <Contact/>
 
-                    </div>
-                </div>
-                <div id="bottomSpacer"></div>
             </div>
         );
     }

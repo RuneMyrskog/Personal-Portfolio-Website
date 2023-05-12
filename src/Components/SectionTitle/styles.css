@@ -1,4 +1,5 @@
 .sectionTitleContainer {
+    width: 100%;
     margin-bottom: 2rem;
 }
 
@@ -6,13 +7,18 @@
     letter-spacing: 1rem;
     text-transform: uppercase;
     font-family: lat, sans-serif;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 200;
     color: #517fec;
 }
 
+
 @media (max-width: 900px) {
     .sectionTitle {
-        font-size: 1.5rem;
+        font-size: 1rem;
+    }
+    .sectionTitleContainer {
+        text-align: center;
     }
 }
+

@@ -25,6 +25,8 @@ export default class Contact extends React.Component {
       message: message
     }
 
+    this.setState({ status: "loading" })
+
     fetch(`https://us-central1-personal-portfolio-24a80.cloudfunctions.net/sendSMSv2`, {
       method: "post",
       headers: {
@@ -45,14 +47,16 @@ export default class Contact extends React.Component {
         this.setState({ status: "error" });
       }
     });
-
-    this.setState({status: "success"})
+    
 
   }
 
   infoSpan(){
     var statusMessage;
     switch (this.state.status){
+      case "loading":
+        statusMessage = "Sending . . .";
+        break;
       case "hidden":
         statusMessage = "";
         break;
@@ -79,7 +83,10 @@ export default class Contact extends React.Component {
       console.log("error");
       return false;
     }
-   
+    name.className = "default-border";
+    email.className = "default-border";
+    message.className = "default-border";
+
     if (name.value === ""){
       name.className = "error-border"
       return false;
@@ -129,13 +136,10 @@ export default class Contact extends React.Component {
 
   render() {
     return (
-      <div id="contact">
-        <script src=
-          "https://smtpjs.com/v3/smtp.js">
-        </script>
-        <div className="sectionContainer">
+      <div id="contact" className="section">
+        <div id="contactContainer" className="sectionContainer">
           <SectionTitle title="Contact"/>
-          <div id="contactContainer">
+          <div className="container-horizontal-spaced">
             <form id="contactForm" onSubmit={this.handleSubmit}>
 
               <label htmlFor="name" >Name</label>
@@ -147,7 +151,7 @@ export default class Contact extends React.Component {
               <label htmlFor="message">Message</label>
               <textarea onClick={() => { this.reset(this.state.message);}} id="message" className="default-border" name="message" rows="6">
               </textarea>
-              <div>
+              <div id="submit-info-span-container">
                 <input onClick={this.handleSubmit.bind(this)} id="submitButton" className="button" type="submit" value="Send Message"/>
                 {this.infoSpan()}
               </div>
