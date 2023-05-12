@@ -2,9 +2,6 @@
     background: var(--lighter-blue);
 }
 
-#aboutContainer {
-    
-}
 
 #aboutInnerContainer {
     display: flex;
@@ -32,6 +29,11 @@
 
     #aboutMeImage {
         width: 45rem;
+    }
+
+    #aboutContainer {
+        width: 45rem;
+        max-width: 80vw;
     }
 
     #aboutMeTextContainer {

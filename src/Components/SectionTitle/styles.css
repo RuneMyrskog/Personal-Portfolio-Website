@@ -1,5 +1,5 @@
 .sectionTitleContainer {
-    width: 100%;
+    /* width: 100%; */
     margin-bottom: 2rem;
 }
 
@@ -17,8 +17,8 @@
     .sectionTitle {
         font-size: 1rem;
     }
-    .sectionTitleContainer {
+    /* .sectionTitleContainer {
         text-align: center;
-    }
+    } */
 }
 

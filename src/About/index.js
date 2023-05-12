@@ -8,10 +8,13 @@ export default class About extends React.Component {
         return (
             <div id="about" className="section">
                 <div id="aboutContainer" className="sectionContainer">
+                   
                     <SectionTitle title="About Me" />
-
                     <div id="aboutInnerContainer">
-                        <img id="aboutMeImage" className="mediumImage" src={WorkspacePicture}></img>
+                       
+                            
+                            <img id="aboutMeImage" className="mediumImage" src={WorkspacePicture}></img>
+                        
                         <div id="aboutMeTextContainer">
                             <div id="aboutMeTextTitleContainer">
                                 <span id="aboutMeTextTitle">Passionate software developer based in Toronto</span>
