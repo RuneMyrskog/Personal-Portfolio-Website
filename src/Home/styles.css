@@ -35,30 +35,37 @@ body {
 
 
 #nameAndTitleContainer {
+  width: 70rem;
+  max-width: 90vw;
   margin-left: auto;
   margin-right: auto;
   margin-top: 25vh;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.downArrowContainer {
-  width: 100%;
-  margin-top: 25vh;
-  text-align: center;
+#titleSectionContainer {
+  max-width: 80vw;
 }
 
 
 #profilePicContainer {
-  padding-left: 10vw;
   text-align: center;
 }
 
 @media (max-width: 1000px) {
   #nameAndTitleContainer {
     flex-direction: column-reverse;
+    gap: 1.5rem;
     align-items: center;
     text-align: center;
     margin-top: 15vh;
+  }
+
+  #nameSubtitleContainer {
+    margin: 0 auto;
+    text-align: center;
   }
 
   #profilePicContainer {
@@ -80,9 +87,16 @@ body {
   display: inline-block;
   width: 20rem;
   height: 20rem;
-  max-width: 60vw;
-  max-height: 60vw;
+
   border: 3px solid white;
+}
+
+@media (max-width: 500px ) {
+  #profilePic {
+    width: 15rem;
+    height: 15rem;
+    background-size: 15rem;
+  }
 }
 
 @keyframes warp {
@@ -99,61 +113,37 @@ body {
 
 
 #nameTitle {
-  padding-top: 3rem;
-  font-size: 6rem;
+  font-size: 4.5rem;
+  line-height: 4rem;
+}
+#nameSubtitleContainer {
+  margin-top: 1rem;
+  width: 30rem;
+  max-width: 70vw;
 }
 
 #nameSubtitle {
-  font-size: 2rem;
-  animation: fadein2 ease-in 3.5s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  width: 20rem;
+  font-size: 1.5rem;
+  opacity: 0.8;
 }
 
 
-@media (max-width: 1350px) {
-  #nameTitle {
-    font-size: 5rem;
-  }
-  #nameSubtitle {
-    font-size: 2rem;
-  }
-}
-@media (max-width:800px) {
-  #nameTitle {
-    font-size: 4.5rem;
-  }
-
-  #nameSubtitle {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width:575px) {
+@media (max-width:1200px) {
   #nameTitle {
     font-size: 3.5rem;
   }
 
   #nameSubtitle {
-    font-size: 1.75rem;
+    font-size: 1rem;
   }
 }
+
 @media (max-width:450px) {
   #nameTitle {
     font-size: 2.5rem;
   }
 
-  #nameSubtitle {
-    font-size: 1.25rem;
-  }
-}
-
-#profilepic {
-  width: 5rem;
-  border-radius: 50%;
-  border: 2px solid white;
-  margin: auto;
-  
 }
 
 #externalsContainer {

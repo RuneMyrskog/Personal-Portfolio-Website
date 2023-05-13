@@ -10,7 +10,7 @@ import {GithubLink, LinkedinLink, } from '../Components/Media';
 export default class Home extends React.Component {
     render (){
         return (
-            <div id="homeContainer">
+            <div id="home">
                 {/* <Squiggle /> */}
                 <div id="topContainer">
                     <Squiggle />
@@ -52,8 +52,13 @@ class TitleSection extends React.Component {
     render (){
         return (
             <div id="titleSectionContainer">
-                <h1 id="nameTitle">Rune Myrskog</h1>
-                <span id="nameSubtitle">Software Developer <GithubLink /> <LinkedinLink /></span>
+                <h1 id="nameTitle">Software Developer</h1>
+                <div id="nameSubtitleContainer">
+                    <span id="nameSubtitle">Hi, im Rune. I'm a software developer based in Toronto, Canada. 
+                    <br/>
+                    <br/>
+                    <GithubLink /> <LinkedinLink /></span>
+                </div>
             </div>
         );
     }

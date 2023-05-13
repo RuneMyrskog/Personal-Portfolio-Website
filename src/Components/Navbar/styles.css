@@ -1,7 +1,3 @@
-* {
-  margin: 0;
-}
-
 #navbar {
   z-index: 5;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -9,74 +5,119 @@
   top: 0px;
   left: 0px;
   right: 0px;
-  height: 2rem;
+  padding: 0.5rem 0;
   background-color: var(--lighter-blue);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   box-shadow: 0 0 10px rgba(0, 0, 0, .09);
 }
 
+.navContainer {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70rem;
+  max-width: 90vw;
+}
+
+
 #navLinkList {
   padding-left: 0rem;
-  width:100%;
-  justify-content: space-around;
-}
-
-
-#navbar ul {
   display: flex;
-  
-  list-style: none;
+  gap: 2rem;
 }
 
-#navbar li {
-  display: flex;
-  align-items: center;
-}
 
-#navbar a {
+#navbar a, #mobile-navbar a {
   text-decoration: none;
  
 }
 
+#navName {
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+
 .navSpan {
-  font-size: 0.9rem;
-  transition: all .05s ease-in-out;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all .1s ease-in-out;
   color: white;
 }
 
-@media (max-width: 400px) {
-  .navSpan {
-    font-size: 0.8rem;
-  }
-
-}
-
 .navSpan:hover {
-  /* color: black; */
   color: #517fec;
 }
 
-#navRightContainer {
-  height: 100%;
+
+
+/* mobile nav */
+
+.hamburger-menu {
+  display: none;
+  transition: all 0.1s ease-in-out;
+}
+
+.hamburger-menu:hover, #closeMobileNav:hover {
+  cursor: pointer;
+  color: #517fec
+}
+
+@media (max-width: 700px) {
+
+  #navLinkList {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+}
+
+#mobile-navbar {
+  position: fixed;
+  height: 100vh;
+  width: 20rem;
+  max-width: 100%;
+  left: -20rem;
+  top: 0;
+  background-color: var(--lighter-blue);
+  border-right: 1px solid rgba(255, 255, 255, 0.398);
+  font-family: Space Grotesk, sans-serif;
   display: flex;
-  flex-basis: 90rem;
-  /* float: right; */
-
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease-in-out;
+  z-index: 10;
 }
 
-@media (max-width: 900px) {
-  #navRightContainer {
-      float: none;
-    }
-}
-
-#navRightContainer .icon {
-  /* margin-right: 1rem; */
-  border-radius: 20%;
+#mobile-navbar.mobile-showing {
+  left: 0;
 }
 
 
+#closeMobileNav {
+  color: white;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+#mobile-navbar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+}
+
+#mobile-navbar .navSpan {
+  font-size: 2rem;
+ 
+}
 
 
 
