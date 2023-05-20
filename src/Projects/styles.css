@@ -69,7 +69,7 @@
 
 .projectImage {
     width: 35rem;
-    height: 25rem;
+    /* height: 25rem; */
     min-width: 15rem;
     min-height: 10rem;
     transition: all .1s ease-in-out;
@@ -94,7 +94,7 @@
 
     .projectImage {
         width: 80vw;
-        height: 50vw;
+        height: auto;
     }
 
     .projectExampleContainer.right {
