@@ -41,7 +41,7 @@ export default class Projects extends React.Component {
                             <br />
                             <span className="projectTechnologies">Angular Firebase Bootstrap</span>
                             <br />
-                            <GithubLink href="https://github.com/RuneMyrskog/CryptoTracker" />
+                            <GithubLink href="https://github.com/RuneMyrskog/SneakPeak" />
                         </Project>
 
                         <Project flipx={false} title={"Rejuvenate"} image={RejuvenateHomePic} alt="Rejuvenate website" href="https://projectrejuvenate.herokuapp.com">
