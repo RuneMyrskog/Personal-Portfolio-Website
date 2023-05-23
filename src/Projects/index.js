@@ -39,7 +39,7 @@ export default class Projects extends React.Component {
                                 Shoe store focused on simplicity with with all the expected ecommerce functions, synced to a realtime database
                             </p>
                             <br />
-                            <span className="projectTechnologies">Angular Firebase Bootstrap</span>
+                            <span className="projectTechnologies">Angular Firebase Bootstrap Typescript</span>
                             <br />
                             <GithubLink href="https://github.com/RuneMyrskog/SneakPeak" />
                         </Project>
