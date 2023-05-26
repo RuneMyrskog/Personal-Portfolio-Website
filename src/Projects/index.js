@@ -7,6 +7,7 @@ import RejuvenateHomePic from "../images/RejuvenateHomePic.png";
 import spaceAdventurePic from "../images/spaceAdventurePic.jpg";
 import CryptoTrackPic from "../images/cyptotrack.png";
 import SneakPeakPic from "../images/sneakpeak.png";
+import GameZonePic from "../images/game-zone.png";
 
 import SectionTitle from '../Components/SectionTitle';
 
@@ -14,15 +15,31 @@ import SectionTitle from '../Components/SectionTitle';
 import { GithubLink } from '../Components/Media';
 
 export default class Projects extends React.Component {
+    isEven(number) {
+        return number % 2 === 0;
+    }
 
     render() {
+        let flipCounter = 1
         return (
             <div id="projects" className="section">
                 <div id="projectsContainer" className="sectionContainer">
-                    <SectionTitle title="Projects" />
+                    <SectionTitle title="projects" />
                     <div id="projectListContainer">
 
-                        <Project flipx={false} title={"CryptoTrack"} image={CryptoTrackPic} alt="CryptoTrack" href="https://crypto-track-hq.vercel.app">
+                        <Project flipx={this.isEven(flipCounter++)} title={"GameZone"} image={GameZonePic} alt="GameZone" href="https://the-game-zone.vercel.app">
+                            <p className="projectDescription">
+                                Modern look and feel website for browsing the most popular games, with live loading, searching, and filtering functions 
+
+
+                            </p>
+                            <br />
+                            <span className="projectTechnologies">React ChakraUI Typescript</span>
+                            <br />
+                            <GithubLink href="https://github.com/RuneMyrskog/GameZone" />
+                        </Project>
+
+                        <Project flipx={this.isEven(flipCounter++)} title={"CryptoTrack"} image={CryptoTrackPic} alt="CryptoTrack" href="https://crypto-track-hq.vercel.app">
                             <p className="projectDescription">
                                 Fully responsive, aesthetic website that displays real-time market data for top 50 cryptocurrencies
 
@@ -34,7 +51,7 @@ export default class Projects extends React.Component {
                             <GithubLink href="https://github.com/RuneMyrskog/CryptoTracker" />
                         </Project>
 
-                        <Project flipx={true} title={"SneakPeak"} image={SneakPeakPic} alt="SneakPeak" href="https://ecommerce-c0ccd.web.app">
+                        <Project flipx={this.isEven(flipCounter++)} title={"SneakPeak"} image={SneakPeakPic} alt="SneakPeak" href="https://ecommerce-c0ccd.web.app">
                             <p className="projectDescription">
                                 Shoe store focused on simplicity with with all the expected ecommerce functions, synced to a realtime database
                             </p>
@@ -44,7 +61,7 @@ export default class Projects extends React.Component {
                             <GithubLink href="https://github.com/RuneMyrskog/SneakPeak" />
                         </Project>
 
-                        <Project flipx={false} title={"Rejuvenate"} image={RejuvenateHomePic} alt="Rejuvenate website" href="https://projectrejuvenate.herokuapp.com">
+                        <Project flipx={this.isEven(flipCounter++)} title={"Rejuvenate"} image={RejuvenateHomePic} alt="Rejuvenate website" href="https://projectrejuvenate.herokuapp.com">
                             <p className="projectDescription">
                                 Full stack social media website targeted towards health enthusiasts, implementing full REST api and all CRUD operations
                             </p>
@@ -55,7 +72,7 @@ export default class Projects extends React.Component {
                         </Project>
 
                         
-                        <Project flipx={true} title={"TreeJS"} image={TreeJSPic} alt="TreeJS" href="https://treejslib.herokuapp.com">
+                        {/* <Project flipx={this.isEven(flipCounter++)} title={"TreeJS"} image={TreeJSPic} alt="TreeJS" href="https://treejslib.herokuapp.com">
                             <p className="projectDescription">
                                 Front end javascript library to render custom tree structures in the DOM
                             </p>
@@ -65,7 +82,7 @@ export default class Projects extends React.Component {
                             <GithubLink href="https://github.com/RuneMyrskog/TreeJS" />
                         </Project>
 
-                        <Project flipx={false} title={"Space Adventure"} image={spaceAdventurePic} alt="space adventure" href="https://github.com/RuneMyrskog/SpaceAdventure-A-2D-Android-Game">
+                        <Project flipx={this.isEven(flipCounter++)} title={"Space Adventure"} image={spaceAdventurePic} alt="space adventure" href="https://github.com/RuneMyrskog/SpaceAdventure-A-2D-Android-Game">
                             <p className="projectDescription">
                                 2D level-based android game developed in Java by myself and 3 other contributors
                             </p>
@@ -75,7 +92,7 @@ export default class Projects extends React.Component {
                             <GithubLink href="https://github.com/RuneMyrskog/SpaceAdventure-A-2D-Android-Game"/>
                         </Project>
 
-                        <Project flipx={true} title={"AStar Visualized"} image={pathFindPic} alt="astar visualization" href="https://astar-visualizer.vercel.app/">
+                        <Project flipx={this.isEven(flipCounter++)} title={"AStar Visualized"} image={pathFindPic} alt="astar visualization" href="https://astar-visualizer.vercel.app/">
                             <p className="projectDescription">
                                 Implementation and visualiztion of the A-Star path finding
                                 algorithm. Written as a python application and as a
@@ -85,7 +102,7 @@ export default class Projects extends React.Component {
                             <span className="projectTechnologies">Python Javascript</span>
                             <br />
                             <GithubLink href="https://github.com/RuneMyrskog/PathFindingVisualizer---static-web-page-version" />
-                        </Project>
+                        </Project> */}
 
                     </div>
                 </div>
