@@ -30,8 +30,6 @@ export default class Projects extends React.Component {
                         <Project flipx={this.isEven(flipCounter++)} title={"GameZone"} image={GameZonePic} alt="GameZone" href="https://the-game-zone.vercel.app">
                             <p className="projectDescription">
                                 Modern look and feel website for browsing the most popular games, with live loading, searching, and filtering functions 
-
-
                             </p>
                             <br />
                             <span className="projectTechnologies">React ChakraUI Typescript</span>
